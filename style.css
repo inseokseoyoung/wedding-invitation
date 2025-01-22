@@ -1,11 +1,18 @@
 /* 기본 스타일 */
+/* 기본 폰트 설정: 한글은 'Gowun Dodum', 영어는 'Poppins' */
+html {
+    font-family: 'Gowun Dodum', sans-serif;  /* 한글 폰트 */
+}
+
+/* 전체적인 기본 폰트 설정 */
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Poppins', sans-serif;  /* 영어 폰트 */
     margin: 0;
     padding: 0;
     background-color: #f3efc3;
     color: #333;
 }
+
 
 .header-container {
     background-color: #f3efc3;
