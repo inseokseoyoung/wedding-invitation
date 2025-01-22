@@ -1,7 +1,7 @@
 /* 기본 스타일 */
 /* 한글 폰트는 'Gowun Dodum', 영어 폰트는 'Poppins' */
 html {
-    font-family: 'Gowun Dodum', sans-serif; /* 한글 폰트 */
+    font-family: 'Gowun Dodum', sans-serif;  /* 한글 폰트 */
 }
 
 /* 전체적인 기본 스타일 */
@@ -13,14 +13,11 @@ body {
     color: #333;
 }
 
-/* 영어 이름은 Poppins 폰트, 한글 이름은 Gowun Dodum */
-.name {
-    font-family: 'Poppins', sans-serif;  /* 영어 이름에 Poppins 폰트 적용 */
+/* <p> 태그에 한글 폰트 적용 */
+p {
+    font-family: 'Gowun Dodum', sans-serif;  /* 한글 폰트 */
 }
 
-.ampersand {
-    font-family: 'Gowun Dodum', sans-serif;  /* & 기호에는 한글 폰트 적용 */
-}
 
 .header-container h1 {
     background-color: #f3efc3;
