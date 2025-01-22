@@ -13,6 +13,15 @@ body {
     color: #333;
 }
 
+/* 영어 이름은 Poppins 폰트, 한글 이름은 Gowun Dodum */
+.name {
+    font-family: 'Poppins', sans-serif;  /* 영어 이름에 Poppins 폰트 적용 */
+}
+
+.ampersand {
+    font-family: 'Gowun Dodum', sans-serif;  /* & 기호에는 한글 폰트 적용 */
+}
+
 .header-container h1 {
     background-color: #f3efc3;
     text-align: center;
