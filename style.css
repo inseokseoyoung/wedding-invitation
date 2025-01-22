@@ -1,10 +1,10 @@
 /* 기본 스타일 */
-/* 기본 폰트 설정: 한글은 'Gowun Dodum', 영어는 'Poppins' */
+/* 한글 폰트는 'Gowun Dodum', 영어 폰트는 'Poppins' */
 html {
-    font-family: 'Gowun Dodum', sans-serif;  /* 한글 폰트 */
+    font-family: 'Gowun Dodum', sans-serif; /* 한글 폰트 */
 }
 
-/* 전체적인 기본 폰트 설정 */
+/* 전체적인 기본 스타일 */
 body {
     font-family: 'Poppins', sans-serif;  /* 영어 폰트 */
     margin: 0;
@@ -13,11 +13,14 @@ body {
     color: #333;
 }
 
-.header-container {
+.header-container h1 {
     background-color: #f3efc3;
     text-align: center;
     padding: 20px 0;
+    font-size: 36px;
+    text-align: center;
 }
+
 
 header {
     background-color: #f3efc3;
