@@ -1,0 +1,104 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff7f7f;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* 신랑/신부 사진 섹션 */
+.couple-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.couple-container div {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.couple-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 결혼식 정보 섹션 */
+.wedding-details {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.wedding-details h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.wedding-details p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* 참석 여부 확인 버튼 */
+.rsvp-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f7f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.rsvp-btn:hover {
+    background-color: #ff4c4c;
+}
+
+/* 모바일 친화적 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .couple-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .couple-container div {
+        margin: 10px 0;
+    }
+
+    .wedding-details p {
+        font-size: 1em;
+    }
+
+    .rsvp-btn {
+        font-size: 1em;
+    }
+}
