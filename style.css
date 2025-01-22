@@ -7,6 +7,12 @@ body {
     color: #333;
 }
 
+.header-container {
+    background-color: #f3efc3;
+    text-align: center;
+    padding: 20px 0;
+}
+
 header {
     background-color: #f3efc3;
     text-align: center;
@@ -59,21 +65,6 @@ header p {
     color: #555;
 }
 
-/* 참석 여부 확인 버튼 */
-.rsvp-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff7f7f;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-
-.rsvp-btn:hover {
-    background-color: #ff4c4c;
-}
 
 /* 모바일 친화적 */
 @media (max-width: 600px) {
