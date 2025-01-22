@@ -1,14 +1,14 @@
 /* 기본 스타일 */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f3efc3;
     color: #333;
 }
 
 header {
-    background-color: #ff7f7f;
+    background-color: #f3efc3;
     text-align: center;
     padding: 20px 0;
 }
