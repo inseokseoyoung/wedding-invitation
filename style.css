@@ -103,7 +103,7 @@ h1 span {
 .wedding-details h3 {
     font-size: 1.3em; /* 폰트 크기 (h1보다 작게) */
     color: #000000; /* 텍스트 색상 */
-    margin: 10px 0; /* 상하 여백 */
+    margin: 20px 0; /* 상하 여백 */
 }
 
 .wedding-details p {
