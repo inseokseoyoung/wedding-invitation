@@ -89,18 +89,17 @@ h1 span {
 /* 결혼식 정보 섹션 */
 .wedding-details {
     padding: 20px;
-    background-color: #f3efc3;
     text-align: left;
 }
 
-.wedding-details h2 {
-    font-size: 1.2em; /* 폰트 크기 (h1보다 작게) */
+.wedding-details h3 {
+    font-size: 1.0em; /* 폰트 크기 (h1보다 작게) */
     color: #000000; /* 텍스트 색상 */
     margin: 0px 0; /* 상하 여백 */
-    font-weight: 300; /* 글씨 두께 */
+    font-weight: 500; /* 글씨 두께 */
 }
 
-.wedding-details p {
+.wedding-details p2 {
     font-size: 1.0em; /* 폰트 크기 (h2보다 작게) */
     color: #000000; /* 텍스트 색상 */
 }
