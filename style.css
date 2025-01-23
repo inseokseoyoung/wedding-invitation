@@ -65,6 +65,7 @@ header h2 {
 header p {
     font-size: 1.2em; /* 폰트 크기 */
     color: #fdfdfd; /* 텍스트 색상 */
+    margin: 0px 0; /* 상하 여백 */
     font-weight: 500; /* 글씨 두께 */
 }
 
