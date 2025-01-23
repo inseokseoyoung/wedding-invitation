@@ -37,7 +37,7 @@ header {
 header h1 {
     font-size: 2.5em; /* 폰트 크기 */
     color: #000000; /* 텍스트 색상 */
-    background-color: #f3efc3; /* h1 배경색 */
+    background-color: transparent; /* h1 배경색 */
     padding: 20px 0; /* h1 패딩 */
 }
 
