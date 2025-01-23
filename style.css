@@ -22,6 +22,12 @@ h3 {
     font-family: 'Orbit', sans-serif;  /* 한글 폰트 */
 }
 
+/* <h4> 태그에 한글 폰트 적용 */
+h4 {
+    font-family: 'Orbit', sans-serif;  /* 한글 폰트 */
+}
+
+
 /* <p> 태그에 한글 폰트 적용 */
 p {
     font-family: 'Noto Sans KR', sans-serif;  /* 한글 폰트 */
@@ -104,6 +110,12 @@ h1 span {
     font-size: 1.3em; /* 폰트 크기 (h1보다 작게) */
     color: #000000; /* 텍스트 색상 */
     margin: 20px 0; /* 상하 여백 */
+}
+
+.wedding-details h4 {
+    font-size: 1.0em; /* 폰트 크기 (h1보다 작게) */
+    color: #000000; /* 텍스트 색상 */
+    margin: 0px 0; /* 상하 여백 */
 }
 
 .wedding-details p {
