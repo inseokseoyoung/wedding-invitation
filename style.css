@@ -64,7 +64,8 @@ header h2 {
 /* Header 안의 p 스타일 */
 header p {
     font-size: 1.2em; /* 폰트 크기 */
-    color: #000000; /* 텍스트 색상 */
+    color: #fdfdfd; /* 텍스트 색상 */
+    font-weight: 500; /* 글씨 두께 */
 }
 
 /* Header h1 안의 span 스타일 */
@@ -99,9 +100,9 @@ h1 span {
 }
 
 .wedding-details h3 {
-    font-size: 1.0em; /* 폰트 크기 (h1보다 작게) */
+    font-size: 1.3em; /* 폰트 크기 (h1보다 작게) */
     color: #000000; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
+    margin: 10px 0; /* 상하 여백 */
 }
 
 .wedding-details p {
