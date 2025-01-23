@@ -6,7 +6,10 @@ html {
 
 /* 전체적인 기본 스타일 */
 body {
-    font-family: 'Poppins', sans-serif;  /* 영어 폰트 */
+    font-family: 'Roboto slab', serif;  /* 영어 폰트 */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #f3efc3;
