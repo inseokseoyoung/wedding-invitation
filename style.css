@@ -43,7 +43,7 @@ header h1 {
     margin: 0px 0; /* 상하 여백 */
     font-weight: 400; /* 글씨 두께 */
     background-color: transparent; /* h1 배경색 */
-    padding: 20px 0; /* h1 패딩 */
+    padding: 0px 0; /* h1 패딩 */
 }
 
 /* Header 안의 h2 스타일 */
