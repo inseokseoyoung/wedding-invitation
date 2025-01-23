@@ -32,14 +32,14 @@ header {
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 정렬 */
     text-align: center; /* 텍스트 중앙 정렬 */
-    padding: 20px 0; /* 패딩 설정 */
+    padding: 0px 0; /* 패딩 설정 */
     background-color: #f3efc3; /* 배경색 (이미지 로드 실패 대비) */
 }
 
 /* Header 안의 h1 스타일 */
 header h1 {
     font-size: 2.5em; /* 폰트 크기 */
-    color: #000000; /* 텍스트 색상 */
+    color: #ffffff; /* 텍스트 색상 */
     margin: 0px 0; /* 상하 여백 */
     font-weight: 400; /* 글씨 두께 */
     background-color: transparent; /* h1 배경색 */
@@ -49,7 +49,7 @@ header h1 {
 /* Header 안의 h2 스타일 */
 header h2 {
     font-size: 1.8em; /* 폰트 크기 (h1보다 작게) */
-    color: #555; /* 텍스트 색상 */
+    color: #ffffff; /* 텍스트 색상 */
     margin: 0px 0; /* 상하 여백 */
     font-weight: 300; /* 글씨 두께 */
 }
