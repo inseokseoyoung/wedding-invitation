@@ -12,8 +12,8 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f3efc3;
-    color: #333;
+    background-color: #ffe4f5;
+    color: #000000;
 }
 
 /* <p> 태그에 한글 폰트 적용 */
@@ -90,17 +90,19 @@ h1 span {
 .wedding-details {
     padding: 20px;
     background-color: #f3efc3;
-    text-align: center;
+    text-align: left;
 }
 
 .wedding-details h2 {
-    font-size: 1.8em;
-    color: #333;
+    font-size: 1.2em; /* 폰트 크기 (h1보다 작게) */
+    color: #000000; /* 텍스트 색상 */
+    margin: 0px 0; /* 상하 여백 */
+    font-weight: 300; /* 글씨 두께 */
 }
 
 .wedding-details p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.0em; /* 폰트 크기 (h2보다 작게) */
+    color: #000000; /* 텍스트 색상 */
 }
 
 footer {
