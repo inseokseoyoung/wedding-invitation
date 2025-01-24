@@ -1,84 +1,76 @@
-/* 기본 스타일 */
-/* 한글 폰트는 'Orbit','Noto Sans KR' 영어 폰트는 'Poppins' */
+/* 기본 폰트 설정 */
 html {
-    font-family: 'Orbit', sans-serif;  /* 한글 폰트 */
-    font-family: 'Noto Sans KR', serif;  /* 한글 폰트 */
+    font-family: 'Noto Sans KR', serif; /* 한글 폰트 */
 }
 
-/* 전체적인 기본 스타일 */
 body {
-    font-family: 'Roboto Slab', serif;  /* 영어 폰트 */
+    font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #ffe4f5;
     color: #000000;
 }
 
-/* <h3> 태그에 한글 폰트 적용 */
-h3 {
-    font-family: 'Orbit', sans-serif;  /* 한글 폰트 */
+/* 텍스트 스타일 */
+h3, p {
+    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 */
 }
 
-/* <h4> 태그에 한글 폰트 적용 */
 h4 {
-    font-family: 'Orbit', sans-serif;  /* 한글 폰트 */
+    font-family: 'Orbit', sans-serif; /* 한글 폰트 */
+    font-size: 1.5em;
+    margin: 0;
+    color: #000;
 }
 
+h3 {
+    font-size: 1.3em;
+    margin: 20px 0;
+    color: #000;
+}
 
-/* <p> 태그에 한글 폰트 적용 */
 p {
-    font-family: 'Noto Sans KR', sans-serif;  /* 한글 폰트 */
+    font-size: 1em;
+    margin: 0;
+    color: #000;
 }
 
-/* Header 스타일 정리 */
+/* Header 스타일 */
 header {
-    background-image: url('images/header-background.jpg'); /* 배경 이미지 */
-    background-size: cover; /* 이미지가 헤더에 꽉 차도록 */
-    background-position: center; /* 이미지가 중앙에 오도록 */
-    background-repeat: no-repeat; /* 이미지 반복 방지 */
-    height: 500px; /* 헤더 높이 설정 */
-    display: flex; /* 가운데 정렬을 위한 Flexbox */
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: center; /* 가로 중앙 정렬 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    padding: 0px 0; /* 패딩 설정 */
-    background-color: #f3efc3; /* 배경색 (이미지 로드 실패 대비) */
+    background: url('images/header-background.jpg') center / cover no-repeat, #f3efc3; /* 배경 이미지와 색상 */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-/* Header 안의 h1 스타일 */
 header h1 {
-    font-size: 2.5em; /* 폰트 크기 */
-    color: #ffffff; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
-    font-weight: 400; /* 글씨 두께 */
-    background-color: transparent; /* h1 배경색 */
-    padding: 0px 0; /* h1 패딩 */
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
 }
 
-/* Header 안의 h2 스타일 */
 header h2 {
-    font-size: 1.8em; /* 폰트 크기 (h1보다 작게) */
-    color: #ffffff; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
-    font-weight: 300; /* 글씨 두께 */
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0;
+    font-weight: 300;
 }
 
-
-/* Header 안의 p 스타일 */
 header p {
-    font-size: 1.2em; /* 폰트 크기 */
-    color: #fdfdfd; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
-    font-weight: 500; /* 글씨 두께 */
+    font-size: 1.2em;
+    color: #fdfdfd;
+    margin: 0;
+    font-weight: 500;
 }
 
-/* Header h1 안의 span 스타일 */
-h1 span {
-    display: block; /* 각 span을 블록 요소로 변경 */
-    text-align: center; /* 중앙 정렬 */
+header h1 span {
+    display: block;
+    text-align: center;
 }
 
 /* 신랑/신부 사진 섹션 */
@@ -96,7 +88,6 @@ h1 span {
 .couple-container img {
     width: 500px;
     height: 500px;
-    border-radius: 0%;
     object-fit: cover;
 }
 
@@ -106,35 +97,17 @@ h1 span {
     text-align: left;
 }
 
-.wedding-details h3 {
-    font-size: 1.3em; /* 폰트 크기 (h1보다 작게) */
-    color: #000000; /* 텍스트 색상 */
-    margin: 20px 0; /* 상하 여백 */
-}
-
-.wedding-details h4 {
-    font-size: 1.5em; /* 폰트 크기 (h1보다 작게) */
-    color: #000000; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
-}
-
-.wedding-details p {
-    font-size: 1.0em; /* 폰트 크기 (h2보다 작게) */
-    color: #000000; /* 텍스트 색상 */
-    margin: 0px 0; /* 상하 여백 */
-}
-
+/* Footer 스타일 */
 footer {
-    text-align: center; /* 텍스트를 가로로 가운데 정렬 */
-    padding: 20px 0; /* 상하 여백 추가 */
+    text-align: center;
+    padding: 20px 0;
 }
 
 footer p {
-    margin: 0; /* p 태그 기본 여백 제거 */
+    margin: 0;
 }
 
-
-/* 모바일 친화적 */
+/* 반응형 디자인 */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2em;
@@ -151,13 +124,5 @@ footer p {
 
     .couple-container div {
         margin: 10px 0;
-    }
-
-    .wedding-details p {
-        font-size: 1em;
-    }
-
-    .rsvp-btn {
-        font-size: 1em;
     }
 }
