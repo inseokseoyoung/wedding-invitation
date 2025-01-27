@@ -33,7 +33,6 @@ header h1 {
 header h2 {
     font-size: 24px;
     color: #6A654B;
-    margin: 8px 0 0;
     font-weight: 300;
 }
 
@@ -41,12 +40,11 @@ header p {
     font-family: 'Orbit', sans-serif;
     font-size: 14px;
     color: #69654B;
-    margin: 8px 0;
 }
 
 #d-day {
     font-family: 'Orbit', sans-serif;
-    font-size: 1.3em;
+    font-size: 20px;
     color: #6A654B;
     background-color: #ffffff;
     padding: 8px 16px;
@@ -54,14 +52,13 @@ header p {
     border-radius: 10px;
     text-align: center;
     display: inline-block;
-    letter-spacing: 4px; /* 자간 */
 }
 
 /* 부모 컨테이너: 가로 정렬 */
 .wedding-details-container {
     display: flex;
     justify-content: space-between; /* 섹션 간 간격 균등 분배 */
-    gap: 20px; /* 섹션 간 간격 */
+    gap: 8px; /* 섹션 간 간격 */
     flex-wrap: wrap; /* 화면이 좁아지면 세로로 정렬 */
     padding: 20px;
     width: 100%; /* 전체 너비를 사용 */
@@ -75,22 +72,21 @@ header p {
 .wedding-details {
     flex: 1 1 100%; /* 항상 100% 너비로 설정하여 한 줄에 배치 */
     padding: 20px;
-    background-color: rgba(250, 255, 222, 0.5); /* 반투명 배경 */
+    background-color: rgba(255, 255, 255, 0.0); /* 반투명 배경 */
     box-sizing: border-box; /* 패딩 포함 크기 계산 */
     text-align: center;
-    border-radius: 8px; /* 둥근 모서리 */
 }
 
 /* 세로 정렬 */
 .details-container {
     display: flex;
     flex-direction: column; /* 세로 정렬 */
-    gap: 8px; /* 항목 간 간격 */
 }
 
 /* 항목 스타일 */
 .detail-item {
     display: block;
+    margin-top: 24px;
 }
 
 /* 제목과 내용을 한 줄로 배치 */
@@ -100,7 +96,7 @@ h3 {
     margin: 0;
     color: #69654B;
     display: inline-block;
-    margin-right: 10px; /* 제목과 내용 간 간격 */
+    margin-right: 24px; /* 제목과 내용 간 간격 */
 }
 
 h4 {
