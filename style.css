@@ -34,7 +34,7 @@ body {
 h3 {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     color: #69654B;
     display: inline-block; /* 한 줄로 배치 */
     margin-right: 10px; /* h3와 h4 사이 간격을 조정 */
