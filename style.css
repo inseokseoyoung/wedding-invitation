@@ -22,18 +22,22 @@ body {
 .details-container {
     display: flex;
     flex-direction: column; /* 세로로 배치 */
-    gap: 20px; /* 각 항목 사이의 간격 */
+    gap: 8px; /* 각 항목 사이의 간격 */
 }
 
+/* 각 항목을 블록으로 처리하여 줄바꿈 */
 .detail-item {
-    display: block; /* h3과 h4를 각각 독립적인 블록으로 처리 */
+    display: block;
 }
 
+/* 신랑/신부 등 텍스트 스타일 */
 h3 {
     font-size: 14px;
-    font-weight: normal; /* 두께를 normal로 설정 */
+    font-weight: bold;
     margin-bottom: 8px;
     color: #69654B;
+    display: inline-block; /* 한 줄로 배치 */
+    margin-right: 10px; /* h3와 h4 사이 간격을 조정 */
 }
 
 h4 {
@@ -41,15 +45,11 @@ h4 {
     font-size: 18px;
     margin: 0;
     color: #69654B;
-    font-weight: normal; /* 글씨 두께를 기본값으로 설정 */
+    font-weight: normal; /* 기본 두께로 설정 */
+    display: inline-block; /* 한 줄로 배치 */
 }
 
-p {
-    font-size: 14px;
-    margin: 0;
-    color: #000;
-}
-
+/* D-Day 스타일 */
 #d-day {
     font-family: 'Orbit', sans-serif; /* 한글 폰트 */
     font-size: 1.3em;
@@ -60,8 +60,8 @@ p {
     margin-bottom: 16px;
     border-radius: 10px; /* 둥근 모서리 */
     text-align: center; /* 텍스트 가운데 정렬 */
-    display: inline-block; /* 블록 요소처럼 보이되, 콘텐츠에 맞게 크기 조정 */
-    letter-spacing: 20px; /* 자간을 넓힘 */
+    display: inline-block; /* 콘텐츠에 맞게 크기 조정 */
+    letter-spacing: 4px; /* 자간을 좀 더 넓게 설정 */
 }
 
 /* Header 스타일 */
