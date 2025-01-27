@@ -12,32 +12,37 @@ body {
     overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
-/* 결혼식 정보 부모 컨테이너: 가로 정렬 */
+/* 부모 컨테이너: 가로 정렬 */
 .wedding-details-container {
     display: flex;
-    justify-content: space-between; /* 섹션 간 간격 균등 분배 */
+    justify-content: space-between;
     gap: 20px; /* 섹션 간 간격 */
-    flex-wrap: wrap; /* 화면이 좁아지면 세로로 정렬 */
+    flex-wrap: wrap; /* 화면이 좁아지면 줄바꿈 */
     padding: 20px;
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto; /* 화면 중앙 정렬 */
     background-color: #FAFFDE; /* 배경색 */
 }
 
-/* 각 섹션 스타일 */
+/* 각 섹션 */
 .wedding-details {
-    flex: 1; /* 동일한 크기로 나눔 */
+    flex: 1 1 45%; /* 최소 45%, 나머지 유동 */
+    max-width: 45%; /* 최대 45% 크기 */
     padding: 20px;
-    background-color:  rgba(250, 255, 222, 0.0); /* 섹션 구분을 위한 배경색 */
+    background-color: rgba(250, 255, 222, 0.5); /* 반투명 배경 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
     text-align: center;
+    border-radius: 8px; /* 둥근 모서리 */
 }
 
 /* 세로 정렬 */
 .details-container {
     display: flex;
-    flex-direction: column; /* 세로 배치 */
+    flex-direction: column; /* 세로 정렬 */
     gap: 8px; /* 항목 간 간격 */
 }
 
-/* 항목을 블록 처리 */
+/* 항목 스타일 */
 .detail-item {
     display: block;
 }
