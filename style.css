@@ -37,6 +37,13 @@ p {
     color: #000;
 }
 
+#d-day {
+    font-size: 1.5em;
+    color: #FF5733; /* 밝은 색으로 강조 */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 /* Header 스타일 */
 header {
     background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지와 색상 */

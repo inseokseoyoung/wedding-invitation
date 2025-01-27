@@ -19,3 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach(section => observer.observe(section)); // 각 섹션을 관찰
 });
+
+function calculateDday() {
+    const weddingDate = new Date(2025, 4, 24); // 2025년 5월 24일
+    const today = new Date();
+    const diff = weddingDate - today;
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+    const dDayElement = document.getElementById("d-day");
+    if (days > 0) {
+        dDayElement.textContent = `D-${days}`; // D-Day 형태로 표시
+    } else if (days === 0) {
+        dDayElement.textContent = "D-Day!"; // 결혼식 당일 표시
+    } else {
+        dDayElement.textContent = `D+${Math.abs(days)}`; // 결혼식 후 표시
+    }
+}
+
+document.addEventListener("DOMContentLoaded", calculateDday);
+
+
+// 페이지가 로드되면 디데이 계산
+document.addEventListener("DOMContentLoaded", calculateDday);
