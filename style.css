@@ -39,7 +39,7 @@ p {
 
 /* Header 스타일 */
 header {
-    background: url('images/header-background.jpg') center / cover no-repeat, #f3efc3; /* 배경 이미지와 색상 */
+    background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지와 색상 */
     height: 500px;
     display: flex;
     align-items: center;
