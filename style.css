@@ -62,7 +62,7 @@ header h2 {
 }
 
 header p {
-    font-family: 'Orbit', sans-serif; /* Orbit 한글 폰트 */
+    font-family: 'Orbit', sans-serif !important;
     font-size: 2em;
     color: #69654B;
     margin: 0;
