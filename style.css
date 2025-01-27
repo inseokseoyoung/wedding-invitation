@@ -11,6 +11,7 @@ body {
     overflow-x: hidden; /* 가로 스크롤 방지 */
     font-optical-sizing: auto;
 }
+
 /* Header 스타일 */
 header {
     background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지 및 색상 */
@@ -54,26 +55,23 @@ header p {
     display: inline-block;
 }
 
-/* 부모 컨테이너: 가로 정렬 */
+/* 부모 컨테이너: 한 줄로 배치 */
 .wedding-details-container {
     display: flex;
-    justify-content: space-between; /* 섹션 간 간격 균등 분배 */
-    gap: 8px; /* 섹션 간 간격 */
-    flex-wrap: wrap; /* 화면이 좁아지면 세로로 정렬 */
+    flex-direction: column; /* 한 줄로 배치 */
     padding: 20px;
-    width: 100%; /* 전체 너비를 사용 */
-    margin: 0 auto; /* 화면 중앙 정렬 */
-    background-color: #FAFFDE; /* 배경색 */
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FAFFDE;
     box-sizing: border-box;
-    overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* 각 섹션 */
 .wedding-details {
-    flex: 1 1 100%; /* 항상 100% 너비로 설정하여 한 줄에 배치 */
+    width: 100%; /* 항상 100% 너비 */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.0); /* 반투명 배경 */
-    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -100,7 +98,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Orbit', sans-serif; /* 한글 폰트 */
+    font-family: 'Orbit', sans-serif;
     font-size: 18px;
     margin: 0;
     color: #69654B;
@@ -152,16 +150,13 @@ footer p {
     transform: translateY(0);
 }
 
-
 /* 모바일 대응 */
 @media (max-width: 768px) {
     .wedding-details-container {
-        justify-content: space-between; /* 모바일에서도 한 줄에 배치 */
-        gap: 10px; /* 섹션 간 간격 줄임 */
+        padding: 10px; /* 모바일에서도 여백 줄임 */
     }
 
     .wedding-details {
-        flex: 0 0 100%; /* 화면에 맞춰 100% 너비로 고정 */
-        max-width: 100%; /* 모바일 화면에 맞춰 최대 100% 너비로 조정 */
+        width: 100%; /* 모바일에서도 100% 너비로 설정 */
     }
 }
