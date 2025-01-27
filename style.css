@@ -7,37 +7,51 @@ body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     font-optical-sizing: auto;
     background-color: #FAFFDE;
-    width: 375px;  /* 모바일 화면 너비 고정 */
+    width: 375px; /* 모바일 화면 너비 고정 */
     margin: 0 auto; /* 화면 중앙에 정렬 */
     overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
-/* 결혼식 정보 섹션 */
-.wedding-details {
+/* 결혼식 정보 부모 컨테이너: 가로 정렬 */
+.wedding-details-container {
+    display: flex;
+    justify-content: space-between; /* 섹션 간 간격 균등 분배 */
+    gap: 20px; /* 섹션 간 간격 */
+    flex-wrap: wrap; /* 화면이 좁아지면 세로로 정렬 */
     padding: 20px;
+    background-color: #FAFFDE; /* 배경색 */
+}
+
+/* 각 섹션 스타일 */
+.wedding-details {
+    flex: 1; /* 동일한 크기로 나눔 */
+    padding: 20px;
+    background-color: #ffffff; /* 섹션 구분을 위한 배경색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
     text-align: left;
 }
 
-/* 각 항목을 세로로 정렬하는 스타일 */
+/* 세로 정렬 */
 .details-container {
     display: flex;
-    flex-direction: column; /* 세로로 배치 */
-    gap: 8px; /* 각 항목 사이의 간격 */
+    flex-direction: column; /* 세로 배치 */
+    gap: 8px; /* 항목 간 간격 */
 }
 
-/* 각 항목을 블록으로 처리하여 줄바꿈 */
+/* 항목을 블록 처리 */
 .detail-item {
     display: block;
 }
 
-/* 신랑/신부 등 텍스트 스타일 */
+/* 제목과 내용을 한 줄로 배치 */
 h3 {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin: 0;
     color: #69654B;
-    display: inline-block; /* 한 줄로 배치 */
-    margin-right: 10px; /* h3와 h4 사이 간격을 조정 */
+    display: inline-block;
+    margin-right: 10px; /* 제목과 내용 간 간격 */
 }
 
 h4 {
@@ -45,28 +59,28 @@ h4 {
     font-size: 18px;
     margin: 0;
     color: #69654B;
-    font-weight: normal; /* 기본 두께로 설정 */
-    display: inline-block; /* 한 줄로 배치 */
+    font-weight: normal;
+    display: inline-block;
 }
 
 /* D-Day 스타일 */
 #d-day {
-    font-family: 'Orbit', sans-serif; /* 한글 폰트 */
+    font-family: 'Orbit', sans-serif;
     font-size: 1.3em;
-    color: #6A654B; /* 밝은 색으로 강조 */
-    background-color: #ffffff; /* 배경 색 */
-    padding: 8px 16px; /* 상하, 좌우 패딩 */
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border-radius: 10px; /* 둥근 모서리 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    display: inline-block; /* 콘텐츠에 맞게 크기 조정 */
-    letter-spacing: 4px; /* 자간을 좀 더 넓게 설정 */
+    color: #6A654B;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    margin: 16px auto; /* 중앙 정렬 */
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 4px; /* 자간 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* 강조 효과 */
 }
 
 /* Header 스타일 */
 header {
-    background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지와 색상 */
+    background: url('images/header-background.png') center / cover no-repeat, #FAFFDE;
     height: 380px;
     display: flex;
     align-items: center;
@@ -75,14 +89,14 @@ header {
 }
 
 header h1 {
-    font-size: 30px; /* 모바일 사이즈에 맞게 크기 줄이기 */
+    font-size: 30px;
     color: #6A654B;
     margin: 0;
     font-weight: 500;
 }
 
 header h2 {
-    font-size: 24px; /* 모바일 사이즈에 맞게 크기 줄이기 */
+    font-size: 24px;
     color: #6A654B;
     margin: 0;
     font-weight: 300;
@@ -90,7 +104,7 @@ header h2 {
 
 header p {
     font-family: 'Orbit', sans-serif;
-    font-size: 14px;  /* 모바일 스타일 유지 */
+    font-size: 14px;
     color: #69654B;
     margin: 0;
 }
@@ -99,24 +113,28 @@ header p {
 .couple-container {
     display: flex;
     justify-content: center;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .couple-container div {
-    margin: 0 20px;
     text-align: center;
 }
 
 .couple-container img {
-    width: 500px;
-    height: 500px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 50%; /* 원형 이미지 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
 }
 
 /* Footer 스타일 */
 footer {
     text-align: center;
     padding: 20px 0;
+    font-size: 12px;
+    color: #69654B;
 }
 
 footer p {
