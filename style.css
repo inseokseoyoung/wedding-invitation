@@ -7,6 +7,9 @@ body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     font-optical-sizing: auto;
     background-color: #FAFFDE;
+    width: 375px;  /* 모바일 화면 너비 고정 */
+    margin: 0 auto; /* 화면 중앙에 정렬 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* 텍스트 스타일 */
@@ -59,30 +62,24 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2em; /* 모바일 사이즈에 맞게 크기 줄이기 */
     color: #6A654B;
     margin: 0;
     font-weight: 500;
 }
 
 header h2 {
-    font-size: 1.8em;
+    font-size: 1.5em; /* 모바일 사이즈에 맞게 크기 줄이기 */
     color: #6A654B;
     margin: 0;
     font-weight: 300;
 }
 
 header p {
-    font-family: 'Orbit', sans-serif !important;
-    font-size: 2em;
+    font-family: 'Orbit', sans-serif;
+    font-size: 1.2em;  /* 모바일 스타일 유지 */
     color: #69654B;
     margin: 0;
-}
-
-
-header h1 span {
-    display: block;
-    text-align: center;
 }
 
 /* 결혼식 정보 섹션 */
@@ -130,24 +127,4 @@ footer p {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* 반응형 디자인 */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    .couple-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .couple-container div {
-        margin: 10px 0;
-    }
 }
