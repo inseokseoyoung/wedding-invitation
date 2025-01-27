@@ -59,6 +59,7 @@ header h2 {
     color: #6A654B;
     margin: 0;
     font-weight: 300;
+    margin-bottom: 16px; /* 하단 여백 */
 }
 
 header p {
