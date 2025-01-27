@@ -39,7 +39,7 @@ p {
 
 #d-day {
     font-family: 'Orbit', sans-serif; /* 한글 폰트 */
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #6A654B; /* 밝은 색으로 강조 */
     background-color: #ffffff; /* 배경 색 */
     padding: 8px 16px; /* 상하, 좌우 패딩 */
@@ -72,7 +72,6 @@ header h2 {
     color: #6A654B;
     margin: 0;
     font-weight: 300;
-    margin-bottom: 16px; /* 하단 여백 */
 }
 
 header p {
