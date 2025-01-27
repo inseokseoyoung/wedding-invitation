@@ -6,11 +6,7 @@ html {
 body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     font-optical-sizing: auto;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
     background-color: #FAFFDE;
-    color: #000000;
 }
 
 /* 텍스트 스타일 */
@@ -87,6 +83,12 @@ header h1 span {
     text-align: center;
 }
 
+/* 결혼식 정보 섹션 */
+.wedding-details {
+    padding: 20px;
+    text-align: left;
+}
+
 /* 신랑/신부 사진 섹션 */
 .couple-container {
     display: flex;
@@ -103,12 +105,6 @@ header h1 span {
     width: 500px;
     height: 500px;
     object-fit: cover;
-}
-
-/* 결혼식 정보 섹션 */
-.wedding-details {
-    padding: 20px;
-    text-align: left;
 }
 
 /* Footer 스타일 */
