@@ -107,6 +107,19 @@ footer p {
     margin: 0;
 }
 
+/* 초기 상태: 요소가 보이지 않음 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* visible 클래스가 추가되면 요소가 보이도록 */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* 반응형 디자인 */
 @media (max-width: 600px) {
     header h1 {
