@@ -59,7 +59,7 @@ p {
 /* Header 스타일 */
 header {
     background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지와 색상 */
-    height: 400px;
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
