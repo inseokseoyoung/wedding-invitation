@@ -26,10 +26,8 @@ body {
 .wedding-details {
     flex: 1; /* 동일한 크기로 나눔 */
     padding: 20px;
-    background-color: #ffffff; /* 섹션 구분을 위한 배경색 */
-    border-radius: 10px; /* 둥근 모서리 */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
-    text-align: left;
+    background-color:  rgba(250, 255, 222, 0.0); /* 섹션 구분을 위한 배경색 */
+    text-align: center;
 }
 
 /* 세로 정렬 */
@@ -75,7 +73,6 @@ h4 {
     text-align: center;
     display: inline-block;
     letter-spacing: 4px; /* 자간 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* 강조 효과 */
 }
 
 /* Header 스타일 */
@@ -126,7 +123,6 @@ header p {
     height: 100px;
     object-fit: cover;
     border-radius: 50%; /* 원형 이미지 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
 }
 
 /* Footer 스타일 */
