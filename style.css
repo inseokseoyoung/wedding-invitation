@@ -7,7 +7,8 @@ body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     font-optical-sizing: auto;
     background-color: #FAFFDE;
-    width: 375px; /* 모바일 화면 너비 고정 */
+    width: 100%; /* 모바일 화면 너비 고정 */
+    max-width: 1200px; /* 최대 너비 설정 */
     margin: 0 auto; /* 화면 중앙에 정렬 */
     overflow-x: hidden; /* 가로 스크롤 방지 */
 }
