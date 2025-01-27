@@ -38,10 +38,16 @@ p {
 }
 
 #d-day {
+    font-family: 'Orbit', sans-serif; /* 한글 폰트 */
     font-size: 1.5em;
-    color: #FF5733; /* 밝은 색으로 강조 */
-    margin-top: 10px;
-    font-weight: bold;
+    color: #6A654B; /* 밝은 색으로 강조 */
+    background-color: #ffffff; /* 배경 색 */
+    padding: 8px 16px; /* 상하, 좌우 패딩 */
+    margin-top: 16px;
+    margin-bottom: 32px;
+    border-radius: 10px; /* 둥근 모서리 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    display: inline-block; /* 블록 요소처럼 보이되, 콘텐츠에 맞게 크기 조정 */
 }
 
 /* Header 스타일 */
