@@ -12,19 +12,28 @@ body {
     overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
-/* 텍스트 스타일 */
-h3, p {
-    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 */
+/* 결혼식 정보 섹션 */
+.wedding-details {
+    padding: 20px;
+    text-align: left;
+}
+
+/* 각 항목을 세로로 정렬하는 스타일 */
+.details-container {
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    gap: 20px; /* 각 항목 사이의 간격 */
+}
+
+.detail-item {
+    display: block; /* h3과 h4를 각각 독립적인 블록으로 처리 */
 }
 
 h3 {
-    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 */
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal; /* 두께를 normal로 설정 */
     margin-bottom: 8px;
     color: #69654B;
-    display: inline-block; /* 한 줄에 배치 */
-    margin-right: 10px; /* h3와 h4 사이 간격을 조정 */
 }
 
 h4 {
@@ -32,10 +41,8 @@ h4 {
     font-size: 18px;
     margin: 0;
     color: #69654B;
-    display: inline-block; /* 한 줄에 배치 */
     font-weight: normal; /* 글씨 두께를 기본값으로 설정 */
 }
-
 
 p {
     font-size: 14px;
@@ -85,12 +92,6 @@ header p {
     font-size: 14px;  /* 모바일 스타일 유지 */
     color: #69654B;
     margin: 0;
-}
-
-/* 결혼식 정보 섹션 */
-.wedding-details {
-    padding: 20px;
-    text-align: left;
 }
 
 /* 신랑/신부 사진 섹션 */
