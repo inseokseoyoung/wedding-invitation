@@ -16,15 +16,15 @@ h3, p {
 
 h3 {
     font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 */
-    font-size: 0.6em;
+    font-size: 1.0em;
     font-weight: bold;
-    margin-bottom: 8;
+    margin-bottom: 8px;
     color: #69654B;
 }
 
 h4 {
     font-family: 'Orbit', sans-serif; /* 한글 폰트 */
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
     color: #69654B;
 }
