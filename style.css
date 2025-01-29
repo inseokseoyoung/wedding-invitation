@@ -15,7 +15,7 @@ body {
 /* Header 스타일 */
 header {
     background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지 및 색상 */
-    height: 450px;
+    min-height: 450px; /* 최소 높이 설정 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,16 +58,15 @@ header p {
 /* 부모 컨테이너: 한 줄로 배치 */
 .wedding-details-container {
     display: flex;
-    flex-direction: column; /* 한 줄로 배치 */
-    width: 100%;
-    margin: 0 auto;
-    background-color: #FAFFDE;
-    box-sizing: border-box;
+    flex-wrap: wrap; /* 화면이 작으면 자동 줄바꿈 */
+    justify-content: center; /* 가운데 정렬 */
+    gap: 8px; /* 섹션 간 간격 */
+    padding: 20px;
 }
 
 /* 각 섹션 */
 .wedding-details {
-    width: 100%; /* 항상 100% 너비 */
+    width: calc(50% - 8px); /* 한 줄에 2개 배치 */
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.0); /* 투명 배경 */
     box-sizing: border-box;
@@ -78,7 +77,8 @@ header p {
 .details-container {
     display: flex;
     flex-direction: column; /* 세로 정렬 */
-    text-align: center;
+    align-items: center; /* 내부 요소 가운데 정렬 */
+    text-align: center; /* 텍스트도 중앙 정렬 */
 }
 
 /* 항목 스타일 */
