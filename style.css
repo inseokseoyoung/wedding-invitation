@@ -15,12 +15,13 @@ body {
 /* Header 스타일 */
 header {
     background: url('images/header-background.png') center / cover no-repeat, #FAFFDE; /* 배경 이미지 및 색상 */
-    height: 380px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
+    margin-top: 160px;
     padding: 0 16px;
 }
 
