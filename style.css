@@ -21,7 +21,13 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
-    padding: 160px 16px 0; /* 상단 패딩으로 여백 추가 */
+    margin-top: 165px;
+    padding: 0 16px; /* 상단 패딩으로 여백 추가 */
+}
+
+/* h1, h2에 margin을 설정해 상단 간격을 조절 */
+header h1, header h2, p {
+    margin: 0px 0;
 }
 
 header h1 {
@@ -92,6 +98,26 @@ header p {
     margin-bottom: 0; /* 마지막 요소의 여백 제거 */
 }
 
+
+/* 제목과 내용을 한 줄로 배치 */
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #69654B;
+    display: inline-block;
+    margin-right: 24px; /* 제목과 내용 간 간격 */
+}
+
+h4 {
+    font-family: 'Orbit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #69654B;
+    font-weight: normal;
+    display: inline-block;
+}
+
 /* 새로운 주소 섹션 스타일 */
 .address-section {
     width: 100%; /* 전체 너비 */
@@ -124,25 +150,6 @@ header p {
     margin-top: 8px;
     font-size: 14px;
     color: #69654B;
-}
-
-/* 제목과 내용을 한 줄로 배치 */
-h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    color: #69654B;
-    display: inline-block;
-    margin-right: 24px; /* 제목과 내용 간 간격 */
-}
-
-h4 {
-    font-family: 'Orbit', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    color: #69654B;
-    font-weight: normal;
-    display: inline-block;
 }
 
 /* 신랑/신부 사진 섹션 */
@@ -192,10 +199,12 @@ footer p {
 /* 모바일 대응 */
 @media (max-width: 768px) {
     .wedding-details-container {
-        padding: 10px; /* 모바일에서도 여백 줄임 */
+        justify-content: space-between; /* 두 개의 항목을 한 줄로 배치 */
+        padding: 10px; /* 여백 조정 */
     }
 
     .wedding-details {
-        width: 100%; /* 모바일에서도 100% 너비로 설정 */
+        width: calc(50% - 16px); /* 모바일에서도 한 줄에 2개씩 */
+        margin-bottom: 16px; /* 섹션 간 간격 추가 */
     }
 }
