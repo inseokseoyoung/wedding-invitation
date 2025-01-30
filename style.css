@@ -20,13 +20,12 @@ body {
     top: 0;  /* 헤더의 맨 위에 위치 */
     left: 50%;  /* 가로 중앙에 위치 */
     transform: translateX(-50%);  /* 정확히 중앙에 위치하도록 조정 */
-    z-index: -1;  /* 이미지가 다른 내용 뒤에 오도록 */
+    z-index: 0;  /* 이미지가 다른 내용 뒤에 오도록 */
 }
 
 /* Header 스타일 */
 header {
     position: relative;
-    background: #FAFFDE;
     min-height: 450px; /* 최소 높이 설정 */
     display: flex;
     align-items: center;
