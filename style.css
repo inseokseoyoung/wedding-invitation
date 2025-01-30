@@ -92,13 +92,14 @@ header p {
  
 /* 기본적으로 줄 내림을 하지 않음 */
 .container p {
-    display: inline; /* 기본적으로는 한 줄로 표시 */
+    display: block;  /* p 태그가 기본적으로 블록 요소로 처리되도록 */
+    margin-right: 24px; /* 오른쪽 여백 */
 }
 
 /* 줄 내림을 원하는 경우 추가할 클래스 */
 .break-line {
     display: block; /* 줄 바꿈을 할 수 있도록 설정 */
-    margin-bottom: 10px; /* 여백 추가 */
+    margin-bottom: 8px; /* 여백 추가 */
 }
 
 .text-style-1 {
