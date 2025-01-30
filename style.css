@@ -100,7 +100,7 @@ header p {
 
 
 /* 제목과 내용을 한 줄로 배치 */
-h3 {
+.wedding-details-container h3 {
     font-size: 14px;
     font-weight: bold;
     margin: 0;
@@ -109,7 +109,7 @@ h3 {
     margin-right: 24px; /* 제목과 내용 간 간격 */
 }
 
-h4 {
+.wedding-details-container h4 {
     font-family: 'Orbit', sans-serif;
     font-size: 18px;
     margin: 0;
