@@ -86,22 +86,21 @@ header p {
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center;     /* 수직 가운데 정렬 */
     text-align: center;      /* 텍스트 수평 정렬 */
-    
     height: 160px; /* 높이를 설정해서 텍스트가 수직 중앙에 오게 함 */
     }
   
 .text-style-1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
     color: #6A654B;
     font-weight: 700;
 }
 
 .text-style-2 {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    color: #69654B;
-    font-weight: 300;
+    font-family: 'Orbit', sans-serif;
+    font-size: 18px;
+    color: #6A654B;
+    font-weight: normal;
 }
 
 /* Footer 스타일 */
