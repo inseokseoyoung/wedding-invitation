@@ -104,6 +104,10 @@ header p {
     padding-top: 16px; /* 신랑,신부 이름과 부모 정보 사이 간격 */
 }
 
+.parent-info:last-child {
+    padding-top: 0; /* 마지막 .parent-info에는 padding-top 적용 안 함 */
+}
+
 .parent-info span {
     margin-right: 24px;
 }
@@ -135,11 +139,11 @@ a {
 
 /* 전화번호 링크 스타일 추가 */
 .phone-link {
-    text-decoration: underline; /* 밑줄 추가 */
+    text-decoration: none; /* 밑줄 추가 */
     color: #6A654B; /* 텍스트 색상 */
-    border-bottom: 1px solid #6A654B; /* 밑줄 추가 */
+    border-bottom: 1px solid rgba(106, 101, 75, 0.3); /* 밑줄 추가 */
     opacity: 0.3; /* 텍스트와 밑줄에 opacity 적용 */
-    padding-bottom: 2px; /* 텍스트와 밑줄 간격 조정 */
+    padding-bottom: 1px; /* 텍스트와 밑줄 간격 조정 */
 }
 
 .phone-link-info {
