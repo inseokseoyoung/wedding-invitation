@@ -35,7 +35,7 @@ header {
     padding: 0 16px; /* 상단 패딩으로 여백 추가 */
     background: url('../images/header-background.png') no-repeat center;
     background-size: cover; /* 이미지 크기 조정 */
-    height: 200px; /* 배경 이미지가 잘 보이도록 높이 설정 */
+    height: 550px; /* 배경 이미지가 잘 보이도록 높이 설정 */
 }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
