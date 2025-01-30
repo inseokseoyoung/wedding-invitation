@@ -70,6 +70,20 @@ header p {
     display: inline-block;
 }
 
+/* 부모 컨테이너를 grid로 설정 */
+.grid-container {
+    display: grid; /* grid로 설정 */
+    grid-template-columns: repeat(2, 1fr); /* 2개의 열로 나누기 */
+    gap: 16px; /* 컨테이너 간의 간격 */
+}
+
+/* 각 컨테이너의 스타일 */
+.container {
+    background-color: #FAFFDE;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
 /* Footer 스타일 */
 footer {
     text-align: center;
