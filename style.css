@@ -96,9 +96,8 @@ header p {
     margin-right: 24px; /* 오른쪽 여백 */
 }
 
-/* 줄 내림을 원하는 경우 추가할 클래스 */
+/* 줄내림을 적용할 때는 별도로 break-line 클래스를 사용 */
 .break-line {
-    display: block; /* 줄 바꿈을 할 수 있도록 설정 */
     margin-bottom: 8px; /* 여백 추가 */
 }
 
