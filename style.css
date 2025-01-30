@@ -141,8 +141,7 @@ a {
 .phone-link {
     text-decoration: none; /* 밑줄 추가 */
     color: #6A654B; /* 텍스트 색상 */
-    border-bottom: 1px solid rgba(106, 101, 75, 0.3); /* 밑줄 추가 */
-    opacity: 0.3; /* 텍스트와 밑줄에 opacity 적용 */
+    border-bottom: 1px solid rgba(106, 101, 75, 0.5); /* 밑줄 추가 */
     padding-bottom: 1px; /* 텍스트와 밑줄 간격 조정 */
 }
 
