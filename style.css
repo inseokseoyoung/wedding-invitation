@@ -94,7 +94,7 @@ header p {
 }
 
 .parent-info {
-    margin-top: 16px; /* 신랑,신부 이름과 부모 정보 사이 간격 */
+    padding-top: 16px; /* 신랑,신부 이름과 부모 정보 사이 간격 */
 }
 
 .text-style-1 {
