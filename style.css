@@ -74,14 +74,34 @@ header p {
 .grid-container {
     display: grid; /* grid로 설정 */
     grid-template-columns: repeat(2, 1fr); /* 2개의 열로 나누기 */
-    gap: 16px; /* 컨테이너 간의 간격 */
+    gap: 0px; /* 컨테이너 간의 간격 */
+    margin-top: 40px;
 }
 
 /* 각 컨테이너의 스타일 */
 .container {
     background-color: #FAFFDE;
     padding: 20px;
-    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;     /* 수직 가운데 정렬 */
+    text-align: center;      /* 텍스트 수평 정렬 */
+    
+    height: 160px; /* 높이를 설정해서 텍스트가 수직 중앙에 오게 함 */
+    }
+  
+.text-style-1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #6A654B;
+    font-weight: 700;
+}
+
+.text-style-2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #69654B;
+    font-weight: 300;
 }
 
 /* Footer 스타일 */
