@@ -35,7 +35,9 @@ header {
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
     padding: 0 16px; /* 상단 패딩으로 여백 추가 */
-    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
