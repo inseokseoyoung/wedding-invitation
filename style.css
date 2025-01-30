@@ -66,14 +66,11 @@ header p {
     display: flex;
     flex-wrap: wrap; /* 화면이 작으면 자동 줄바꿈 */
     justify-content: center; /* 가운데 정렬 */
-    gap: 8px; /* 섹션 간 간격 */
-    padding: 20px;
 }
 
 /* 각 섹션 */
 .wedding-details {
-    width: calc(50% - 8px); /* 한 줄에 2개 배치 */
-    padding: 8px;
+    width: calc(50% - 0px); /* 한 줄에 2개 배치 */
     background-color: rgba(255, 255, 255, 0.0); /* 투명 배경 */
     box-sizing: border-box;
     text-align: center;
@@ -202,12 +199,12 @@ footer p {
 /* 모바일 대응 */
 @media (max-width: 768px) {
     .wedding-details-container {
-        justify-content: space-between; /* 두 개의 항목을 한 줄로 배치 */
-        padding: 10px; /* 여백 조정 */
+        justify-content: center; /* 두 개의 항목을 한 줄로 배치 */
+        padding: 0px; /* 여백 조정 */
     }
 
     .wedding-details {
-        width: calc(50% - 16px); /* 모바일에서도 한 줄에 2개씩 */
+        width: calc(50% - 0px); /* 모바일에서도 한 줄에 2개씩 */
         margin-bottom: 16px; /* 섹션 간 간격 추가 */
     }
 }
