@@ -42,7 +42,7 @@ header h1, header h2, p {
 header h1 {
     font-size: 30px;
     color: #6A654B;
-    margin-top: 120px;
+    margin-top: 165px;
     font-weight: 420;
 }
 
@@ -82,19 +82,12 @@ header p {
 
 .container {
     background-color: #FAFFDE;
-    padding: 20px;
     display: flex;
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center;     /* 수직 가운데 정렬 */
     text-align: center;      /* 텍스트 수평 정렬 */
     height: 160px; /* 높이를 설정해서 텍스트가 수직 중앙에 오게 함 */
     }
- 
-/* 기본적으로 줄 내림을 하지 않음 */
-.container p {
-    display: block;  /* p 태그가 기본적으로 블록 요소로 처리되도록 */
-    margin-right: 24px; /* 오른쪽 여백 */
-}
 
 .text-style-1 {
     font-family: 'Noto Sans KR', sans-serif;
