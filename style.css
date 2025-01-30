@@ -32,7 +32,6 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
-    margin-top: 165px;
     padding: 0 16px; /* 상단 패딩으로 여백 추가 */
 }
 
@@ -44,8 +43,8 @@ header h1, header h2, p {
 header h1 {
     font-size: 30px;
     color: #6A654B;
-    margin: 0;
-    font-weight: 500;
+    margin-top: 165px;
+    font-weight: 420;
 }
 
 header h2 {
@@ -56,7 +55,7 @@ header h2 {
 
 header p {
     font-family: 'Orbit', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #69654B;
 }
 
