@@ -82,7 +82,7 @@ header p {
 
 .container {
     background-color: #FAFFDE;
-    display: flex;
+    display: block;
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center;     /* 수직 가운데 정렬 */
     text-align: center;      /* 텍스트 수평 정렬 */
