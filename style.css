@@ -79,6 +79,7 @@ header p {
 }
 
 /* 각 컨테이너의 스타일 */
+
 .container {
     background-color: #FAFFDE;
     padding: 20px;
@@ -88,7 +89,18 @@ header p {
     text-align: center;      /* 텍스트 수평 정렬 */
     height: 160px; /* 높이를 설정해서 텍스트가 수직 중앙에 오게 함 */
     }
-  
+ 
+/* 기본적으로 줄 내림을 하지 않음 */
+.container p {
+    display: inline; /* 기본적으로는 한 줄로 표시 */
+}
+
+/* 줄 내림을 원하는 경우 추가할 클래스 */
+.break-line {
+    display: block; /* 줄 바꿈을 할 수 있도록 설정 */
+    margin-bottom: 10px; /* 여백 추가 */
+}
+
 .text-style-1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -102,6 +114,7 @@ header p {
     color: #6A654B;
     font-weight: normal;
 }
+
 
 /* Footer 스타일 */
 footer {
