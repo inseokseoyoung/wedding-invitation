@@ -89,7 +89,6 @@ header p {
     justify-content: center; /* 수직 중앙 정렬 */
     align-items: center; /* 수평 중앙 정렬 */
     border-right: 1px solid #6A654B; /* 오른쪽 경계선 추가 */
-    padding-right: 40px; /* 오른쪽 여백을 추가해서 선의 길이를 조절 */
 }
 
 /* 마지막 container의 오른쪽 border를 없애기 위한 CSS */
@@ -109,6 +108,11 @@ header p {
     margin-right: 24px;
 }
 
+/* 마지막 span에는 margin-right을 적용하지 않음 */
+.parent-info span:last-child {
+    margin-right: 0;
+}
+
 .text-style-1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -123,7 +127,10 @@ header p {
     font-weight: normal;
 }
 
-
+.phone-link {
+    text-decoration: underline; /* 밑줄 추가 */
+    color: #6A654B; /* 텍스트 색상, 필요에 따라 변경 가능 */
+}
 
 /*
 footer {
