@@ -32,6 +32,7 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
+    margin-top: 165px;
     padding: 0 16px; /* 상단 패딩으로 여백 추가 */
 }
 
