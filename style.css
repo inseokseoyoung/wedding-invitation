@@ -42,7 +42,7 @@ header h1, header h2, p {
 header h1 {
     font-size: 30px;
     color: #6A654B;
-    margin-top: 165px;
+    margin-top: 120px;
     font-weight: 420;
 }
 
@@ -94,11 +94,6 @@ header p {
 .container p {
     display: block;  /* p 태그가 기본적으로 블록 요소로 처리되도록 */
     margin-right: 24px; /* 오른쪽 여백 */
-}
-
-/* 줄내림을 적용할 때는 별도로 break-line 클래스를 사용 */
-.break-line {
-    margin-bottom: 8px; /* 여백 추가 */
 }
 
 .text-style-1 {
