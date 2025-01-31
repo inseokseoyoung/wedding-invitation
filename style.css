@@ -32,10 +32,11 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
-    padding: 0 16px; /* 상단 패딩으로 여백 추가 */
     background: url('./images/header-background.png') no-repeat center;
     background-size: cover; /* 이미지 크기 조정 */
-    height: 800px; /* 배경 이미지가 잘 보이도록 높이 설정 */
+    height: 60vh;
+    min-height: 400px;
+    background-size: contain;
 }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
@@ -46,7 +47,6 @@ header h1, header h2, p {
 header h1 {
     font-size: 30px;
     color: #6A654B;
-    margin-top: 165px;
     font-weight: 420;
 }
 
