@@ -37,7 +37,7 @@ header h1 {
 }
 
 header h1 span:first-child {
-    margin-top: 96px; /* 상단 여백은 첫 번째 이름에만 적용 */
+    margin-top: 72px; /* 상단 여백은 첫 번째 이름에만 적용 */
     display: block;
 }
 
@@ -74,7 +74,6 @@ header p {
     display: grid; /* grid로 설정 */
     grid-template-columns: repeat(2, 1fr); /* 2개의 열로 나누기 */
     gap: 0px; /* 컨테이너 간의 간격 */
-    margin-top: 8px;
 }
 
 /* 각 컨테이너의 스타일 */
@@ -155,7 +154,7 @@ a {
 .image-container {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 16px;
     max-width: 100%;
     overflow: hidden;
   }
