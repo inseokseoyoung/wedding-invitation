@@ -21,7 +21,7 @@ header {
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
     background: url('./images/header-background.png') no-repeat center;
-    min-height: 396px;
+    min-height: 365px;
     background-size: contain;
 }
 
