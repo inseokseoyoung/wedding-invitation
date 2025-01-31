@@ -148,11 +148,14 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 32px;
+    max-width: 100%;
+    overflow: hidden;
   }
   
   .image-container img {
     width: auto;
     height: 56px; /* 고정된 높이 */
+    max-width: 100%;
     object-fit: contain; /* 원본 비율 유지 */
     display: block;
   }  
