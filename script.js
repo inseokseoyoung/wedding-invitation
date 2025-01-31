@@ -9,16 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible"); // 요소가 보이면 visible 클래스 추가
-                observer.unobserve(entry.target); // 한 번만 실행되도록 중지
-            }
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add("visible");
+            }, index * 200); // 섹션마다 200ms 딜레이 추가
+            observer.unobserve(entry.target);
+          }
         });
-    }, observerOptions);
-
-    sections.forEach(section => observer.observe(section)); // 각 섹션을 관찰
-});
+      }, observerOptions);
+    
+      sections.forEach((section) => observer.observe(section));
+    });
 
 function calculateDday() {
     const weddingDate = new Date(2025, 4, 24); // 2025년 5월 24일
