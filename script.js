@@ -43,15 +43,17 @@ document.addEventListener("DOMContentLoaded", calculateDday);
 document.addEventListener("DOMContentLoaded", calculateDday);
 
 
-const swiper = new Swiper('.swiper-container', {
-    loop: true, // 무한 슬라이드
-    autoplay: {
-      delay: 5000, // 슬라이드 간격 (5초)
-      disableOnInteraction: false, // 제스처 후에도 자동 슬라이드 유지
-    },
-    speed: 1200, // 슬라이드 전환 속도
-    grabCursor: true, // 마우스 드래그 커서 활성화
-    slidesPerView: 1, // 한 번에 한 슬라이드만 보여줌
-    effect: 'slide', // 기본 슬라이드 효과
+document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,  // 무한 슬라이드
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 1200,
+      grabCursor: true,
+      slidesPerView: 1,
+    });
   });
+  
   
