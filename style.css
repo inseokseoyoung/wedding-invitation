@@ -33,9 +33,7 @@ header {
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
     background: url('./images/header-background.png') no-repeat center;
-    background-size: cover; /* 이미지 크기 조정 */
-    height: 60vh;
-    min-height: 400px;
+    min-height: 340px;
     background-size: contain;
 }
 
@@ -48,6 +46,7 @@ header h1 {
     font-size: 30px;
     color: #6A654B;
     font-weight: 420;
+    margin-top: 104px;
 }
 
 header h2 {
