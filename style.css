@@ -149,7 +149,7 @@ a {
     max-width: 800px;
     aspect-ratio: 1/1;
     height: 400px;
-    margin: 0 auto;
+    margin-top: 40px;
     overflow: hidden;
   }
   

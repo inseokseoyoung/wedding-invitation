@@ -47,12 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper('.swiper-container', {
       loop: true,  // 무한 슬라이드
       autoplay: {
-        delay: 5000,
+        delay: 0,
         disableOnInteraction: false,
       },
-      speed: 1200,
+      speed: 4000,
       grabCursor: true,
-      slidesPerView: 1,
+      slidesPerView: 1.5,
+      centeredSlides: true, // 중앙에 슬라이드 위치
+      spaceBetween: 10, // 슬라이드 간 여백
     });
   });
   
