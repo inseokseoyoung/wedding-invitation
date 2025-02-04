@@ -89,6 +89,20 @@ header p {
     border-right: 1px solid #6A654B; /* 오른쪽 경계선 추가 */
 }
 
+.address-container {
+    background-color: #FAFFDE;
+    text-align: center; /* 텍스트 수평 정렬 */
+    height: 40px; /* 컨테이너 높이 설정 */
+    display: flex; /* flexbox 사용 */
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+}
+
+.address-container + .address-container {
+    margin-top: 40px;
+}
+
 /* 마지막 container의 오른쪽 border를 없애기 위한 CSS */
 .grid-container .container:last-child {
     border-right: none;
