@@ -37,7 +37,7 @@ header h1 {
 }
 
 header h1 span:first-child {
-    margin-top: 88px; /* 상단 여백은 첫 번째 이름에만 적용 */
+    margin-top: 104px; /* 상단 여백은 첫 번째 이름에만 적용 */
     display: block;
 }
 
