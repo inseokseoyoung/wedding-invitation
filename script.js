@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function copyAddress() {
     const address = "서울 구로구 새말로 97 신도림테크노마트 7층";
     navigator.clipboard.writeText(address).then(() => {
-        alert('주소가 복사되었습니다!');
+        alert('주소가 복사되었습니다. 지도 앱을 통해 길찾기를 시작해주세요.');
     }).catch(err => {
-        alert('주소 복사에 실패했습니다.');
+        alert('주소 복사에 실패했습니다. 다시 시도해주세요.');
     });
 }
  
