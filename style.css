@@ -188,7 +188,6 @@ a {
   .mapimage-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
     max-width: 100%;
     overflow: hidden;
   }
