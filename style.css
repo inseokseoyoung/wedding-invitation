@@ -92,8 +92,8 @@ header p {
 .address-container {
     background-color: #FAFFDE;
     text-align: center; /* 텍스트 수평 정렬 */
-    height: 40px; /* 컨테이너 높이 설정 */
-    margin-bottom: 32px;
+    height: 32px; /* 컨테이너 높이 설정 */
+    margin-bottom: 16px;
     display: flex; /* flexbox 사용 */
     flex-direction: column; /* 세로 정렬 */
     justify-content: center; /* 수직 중앙 정렬 */
@@ -188,7 +188,7 @@ a {
   .mapimage-container {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-bottom: 32px;
     max-width: 100%;
     overflow: hidden;
   }
