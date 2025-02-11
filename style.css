@@ -200,6 +200,26 @@ a {
     display: block;
   }  
 
+  .account-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px; /* 박스 간 간격 */
+    background-color: #FAFFDE;
+  }
+  
+  .account-box {
+    background-color: #ffffff;
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .account-info {
+    margin-top: 8px;
+  }
+
 .swiper-container {
     width: 100%;
     max-width: 800px;
