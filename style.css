@@ -140,6 +140,14 @@ header p {
     font-weight: normal;
 }
 
+.text-style-3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #6A654B;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
 /* 기본 링크 스타일 리셋 */
 a {
     text-decoration: none; /* 기본 밑줄 제거 */
@@ -205,6 +213,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #FAFFDE;
+    margin-top: 24px;
   }
   
   .account-box {
@@ -217,10 +226,6 @@ a {
     margin-top: 24px;
   }
   
-  .account-info {
-    margin-top: 8px;
-  }
-
 .swiper-container {
     width: 100%;
     max-width: 800px;
