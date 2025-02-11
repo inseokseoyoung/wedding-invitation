@@ -204,7 +204,6 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px; /* 박스 간 간격 */
     background-color: #FAFFDE;
   }
   
@@ -213,7 +212,9 @@ a {
     padding: 16px;
     width: 100%;
     max-width: 300px;
+    border-radius: 16px;
     text-align: center;
+    margin-top: 24px;
   }
   
   .account-info {
