@@ -87,7 +87,6 @@ header p {
     flex-direction: column; /* 세로 정렬 */
     justify-content: center; /* 수직 중앙 정렬 */
     align-items: center; /* 수평 중앙 정렬 */
-    border-right: 1px solid #6A654B; /* 오른쪽 경계선 추가 */
 }
 
 .address-container {

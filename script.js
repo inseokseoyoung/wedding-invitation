@@ -77,3 +77,12 @@ function copyManAccount() {
       alert('계좌번호 복사에 실패했습니다. 다시 시도해주세요.');
   });
 }
+
+function copyWomanAccount() {
+  const address = "신한은행 110205761080";
+  navigator.clipboard.writeText(address).then(() => {
+      alert('계좌번호가 복사되었습니다.');
+  }).catch(err => {
+      alert('계좌번호 복사에 실패했습니다. 다시 시도해주세요.');
+  });
+}
