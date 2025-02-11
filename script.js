@@ -68,4 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
         alert('주소 복사에 실패했습니다. 다시 시도해주세요.');
     });
 }
- 
+
+function copyManAccount() {
+  const address = "신한은행 110205761080";
+  navigator.clipboard.writeText(address).then(() => {
+      alert('계좌번호가 복사되었습니다.');
+  }).catch(err => {
+      alert('계좌번호 복사에 실패했습니다. 다시 시도해주세요.');
+  });
+}
