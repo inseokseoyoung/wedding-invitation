@@ -82,9 +82,10 @@ function copyWomanAccount() {
 document.addEventListener("DOMContentLoaded", function () {
   lottie.loadAnimation({
       container: document.getElementById("lottie-container"), // 애니메이션을 표시할 요소
-      renderer: "svg", // 렌더링 방식 (svg, canvas, html)
+      renderer: "svg", // 렌더링 방식
       loop: true, // 반복 여부
       autoplay: true, // 자동 재생 여부
-      path: "https://assets10.lottiefiles.com/packages/lf20_49rdyysj.json" // 샘플 애니메이션 JSON URL
+      path: "https://assets10.lottiefiles.com/packages/lf20_49rdyysj.json" // 애니메이션 경로
   });
 });
+
