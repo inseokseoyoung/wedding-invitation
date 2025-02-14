@@ -17,8 +17,10 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* #fireworks보다 아래에 위치 */
+    pointer-events: none; /* canvas가 다른 터치/클릭 이벤트를 차단하지 않도록 */
 }
+
 
 body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
