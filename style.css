@@ -9,18 +9,17 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* 폭죽 애니메이션이 다른 요소를 차단하지 않게 */
-    z-index: 9999; /* 다른 요소 위에 표시 */
+    pointer-events: none; /* 클릭이나 터치 이벤트를 막아 다른 요소와 상호작용을 방해하지 않음 */
+    z-index: 9999; /* 폭죽이 다른 요소 위에 표시 */
 }
 
 canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999; /* #fireworks보다 아래에 위치 */
-    pointer-events: auto; /* canvas는 클릭 이벤트를 받도록 설정 */
+    z-index: 999; /* 폭죽 아래로 설정 */
+    pointer-events: none; /* canvas에서 터치나 클릭이 안되도록 설정 */
 }
-
 
 body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */

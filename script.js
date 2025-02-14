@@ -82,12 +82,8 @@ function copyWomanAccount() {
 // 폭죽 효과 코드
 document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById("fireworksCanvas");
-  if (!canvas) {
-      console.error("🔥 Error: Canvas element not found!");
-      return; // canvas가 없으면 실행 중단
-  }
-
   const ctx = canvas.getContext("2d");
+
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
@@ -96,13 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
           this.x = x;
           this.y = y;
           this.particles = [];
-          for (let i = 0; i < 50; i++) {
+          for (let i = 0; i < 200; i++) {
               this.particles.push({
                   x: this.x,
                   y: this.y,
                   angle: Math.random() * Math.PI * 2,
                   speed: Math.random() * 4 + 2,
-                  life: 50
+                  life: 100
               });
           }
       }
@@ -118,10 +114,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       draw() {
-          ctx.fillStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 1)`;
+          ctx.fillStyle = "rgb(140, 150, 63)"; // 원하는 색상으로 설정
           this.particles.forEach(p => {
               ctx.beginPath();
-              ctx.rect(p.x, p.y, 4, 4);
+              ctx.rect(p.x, p.y, 5, 5); // 사각형 모양으로 폭죽 구현
               ctx.fill();
           });
       }
@@ -135,29 +131,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      fireworks.forEach((firework, index) => {
+      fireworks.forEach(firework => {
           firework.update();
           firework.draw();
-          if (firework.particles.length === 0) {
-              fireworks.splice(index, 1);
-          }
       });
-
       requestAnimationFrame(animate);
   }
 
   animate();
 
-  canvas.addEventListener("click", function (event) {
-    // 폭죽이 생성될 때, canvas 클릭 이벤트가 다른 요소의 클릭 이벤트를 방해하지 않도록 stopPropagation 제거
-    createFirework(event.clientX, event.clientY);
-});
-
-  function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-  }
-
-  window.addEventListener("resize", resizeCanvas);
-  resizeCanvas();
+  // 페이지 로드시 폭죽 터짐 (가운데에서)
+  createFirework(window.innerWidth / 2, window.innerHeight / 2);
 });
