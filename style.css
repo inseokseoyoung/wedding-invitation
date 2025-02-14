@@ -9,7 +9,7 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* 다른 요소들과의 인터랙션 방해 안 하도록 */
+    pointer-events: none; /* 폭죽 애니메이션이 다른 요소를 차단하지 않게 */
     z-index: 9999; /* 다른 요소 위에 표시 */
 }
 
@@ -18,7 +18,7 @@ canvas {
     top: 0;
     left: 0;
     z-index: 1000; /* #fireworks보다 아래에 위치 */
-    pointer-events: none; /* canvas가 다른 터치/클릭 이벤트를 차단하지 않도록 */
+    pointer-events: auto; /* canvas는 클릭 이벤트를 받도록 설정 */
 }
 
 
