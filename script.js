@@ -101,14 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   class Firework {
       constructor() {
-          // 폭죽의 시작 위치를 화면의 중앙으로 설정
-          this.x = canvas.width / 2;
-          this.y = canvas.height / 2;
+          // 폭죽이 양쪽 끝에서 랜덤하게 시작
+          const randomSide = Math.random() > 0.5 ? 'left' : 'right';
+          this.x = randomSide === 'left' ? Math.random() * (canvas.width / 2) : Math.random() * (canvas.width / 2) + canvas.width / 2;
+          this.y = 0; // 화면 상단에서 시작
           this.particles = [];
           this.isExploded = false;
 
           // 파티클들 생성
-          for (let i = 0; i < 200; i++) {  // 파티클 개수
+          for (let i = 0; i < 150; i++) {  // 파티클 개수
               this.particles.push({
                   x: this.x,
                   y: this.y,
@@ -124,10 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       update() {
           if (!this.isExploded) {
-              // 폭죽이 폭발할 때까지 천천히 올라가도록 Y축 속도 감소
+              // 폭죽이 폭발할 때까지 떨어지도록 Y축 속도 증가
               this.particles.forEach(p => {
-                  p.y += p.speed;  // 위로 상승
-                  if (p.y > canvas.height / 3) {  // 절반 이상 올라가면 폭발
+                  p.y += p.speed;  // 아래로 떨어짐
+                  if (p.y > canvas.height / 3) {  // 일정 높이까지 떨어지면 폭발
                       this.isExploded = true;  // 폭발 상태로 변경
                   }
               });
@@ -152,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
               // 이미지가 로드된 후에 그리기
               if (particleImages[0].complete && particleImages[1].complete && particleImages[2].complete) {
                   // 랜덤으로 선택된 이미지 그리기
-                  ctx.drawImage(particleImages[p.imageIndex], p.x, p.y, 20, 20); // 파티클 크기 조정
+                  ctx.drawImage(particleImages[p.imageIndex], p.x, p.y, 40, 40); // 파티클 크기 조정
               }
           });
       }
@@ -175,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   animate();
 
-  // 페이지 로드시 폭죽 터짐 (상단에서)
+  // 페이지 로드시 폭죽 터짐 (양쪽 끝에서)
   createFirework();
 });
+
