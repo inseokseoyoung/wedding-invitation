@@ -3,17 +3,6 @@ html {
     font-family: 'Noto Sans KR', serif; /* 한글 폰트 */
 }
 
-#backgroundCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /* 배경으로 설정 */
-    pointer-events: none; /* 클릭이나 터치 방해 안 하도록 설정 */
-}
-
-
 body {
     font-family: 'Roboto Slab', serif; /* 영어 폰트 */
     background-color: #FAFFDE;
