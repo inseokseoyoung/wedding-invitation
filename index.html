@@ -169,5 +169,24 @@
 -->
         <!-- HTML 파일에 script.js 링크 추가 -->
     <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fireworks.push(createFirework(window.innerWidth / 2, window.innerHeight / 2));
+        });
+        
+        document.body.addEventListener("click", (event) => {
+            fireworks.push(createFirework(event.clientX, event.clientY));
+        });
+        
+        const weddingDate = new Date("2025-05-24T00:00:00");
+        const today = new Date();
+        if (today.toDateString() === weddingDate.toDateString()) {
+            setTimeout(() => {
+                fireworks.push(createFirework(window.innerWidth / 2, window.innerHeight / 2));
+            }, 1000);
+        }
+        </script>
+        
 </body>
 </html>

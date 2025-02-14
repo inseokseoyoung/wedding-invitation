@@ -86,3 +86,78 @@ function copyWomanAccount() {
       alert('계좌번호 복사에 실패했습니다. 다시 시도해주세요.');
   });
 }
+
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+class Particle {
+    constructor(x, y, color, angle, speed) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.angle = angle;
+        this.speed = speed;
+        this.alpha = 1;
+    }
+
+    update() {
+        this.x += Math.cos(this.angle) * this.speed;
+        this.y += Math.sin(this.angle) * this.speed;
+        this.alpha -= 0.02; // 서서히 사라지도록
+    }
+
+    draw() {
+        ctx.globalAlpha = this.alpha;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+
+function createFirework(x, y) {
+    const colors = ["#ff4d4d", "#ffaf40", "#40ff7f", "#4d79ff", "#ff66d9"];
+    const particles = [];
+
+    for (let i = 0; i < 30; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 4 + 2;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        particles.push(new Particle(x, y, color, angle, speed));
+    }
+
+    return particles;
+}
+
+let fireworks = [];
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    fireworks.forEach((firework, index) => {
+        firework.forEach((particle, pIndex) => {
+            particle.update();
+            particle.draw();
+            if (particle.alpha <= 0) {
+                firework.splice(pIndex, 1);
+            }
+        });
+
+        if (firework.length === 0) {
+            fireworks.splice(index, 1);
+        }
+    });
+
+    requestAnimationFrame(animate);
+}
+
+canvas.addEventListener("click", (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    fireworks.push(createFirework(x, y));
+});
+
+animate();
