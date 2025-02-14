@@ -87,22 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  // 이미지 로드
+  // 이미지 로드 (상대 경로로 설정)
   const particleImages = [
       new Image(),
       new Image(),
       new Image()
   ];
 
+  // 이미지 경로 업데이트
   particleImages[0].src = "images/confetti_image_1.png"; // 첫 번째 이미지 경로
   particleImages[1].src = "images/confetti_image_2.png"; // 두 번째 이미지 경로
   particleImages[2].src = "images/confetti_image_3.png"; // 세 번째 이미지 경로
 
   class Firework {
       constructor() {
-          // 폭죽의 시작 위치를 상단 중앙으로 설정
-          this.x = Math.random() * canvas.width;
-          this.y = 0;  // 화면의 상단에서 시작
+          // 폭죽의 시작 위치를 화면의 중앙으로 설정
+          this.x = canvas.width / 2;
+          this.y = canvas.height / 2;
           this.particles = [];
           this.isExploded = false;
 
@@ -112,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   x: this.x,
                   y: this.y,
                   angle: Math.random() * Math.PI * 2,
-                  speed: Math.random() * 4 + 2,
+                  speed: Math.random() * 6 + 4,  // 속도를 더 빠르게 설정
                   life: 100,
                   imageIndex: Math.floor(Math.random() * 3),  // 0, 1, 2 중 하나를 랜덤으로 선택
                   gravity: 0.1 + Math.random() * 0.2,  // 중력 추가
@@ -126,8 +127,8 @@ document.addEventListener("DOMContentLoaded", function () {
               // 폭죽이 폭발할 때까지 천천히 올라가도록 Y축 속도 감소
               this.particles.forEach(p => {
                   p.y += p.speed;  // 위로 상승
-                  if (p.y > canvas.height / 2) {
-                      this.isExploded = true;  // 절반 이상 올라가면 폭발
+                  if (p.y > canvas.height / 3) {  // 절반 이상 올라가면 폭발
+                      this.isExploded = true;  // 폭발 상태로 변경
                   }
               });
           }
@@ -151,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
               // 이미지가 로드된 후에 그리기
               if (particleImages[0].complete && particleImages[1].complete && particleImages[2].complete) {
                   // 랜덤으로 선택된 이미지 그리기
-                  ctx.drawImage(particleImages[p.imageIndex], p.x, p.y, 10, 10); // 이미지 크기 조정 가능
+                  ctx.drawImage(particleImages[p.imageIndex], p.x, p.y, 20, 20); // 파티클 크기 조정
               }
           });
       }
@@ -176,9 +177,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 페이지 로드시 폭죽 터짐 (상단에서)
   createFirework();
-
-  // 폭죽이 터진 후에는 클릭으로 추가할 수도 있음 (필요시)
-  // document.body.addEventListener("click", function (event) {
-  //     createFirework(event.clientX, event.clientY);
-  // });
 });
