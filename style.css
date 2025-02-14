@@ -17,7 +17,7 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* #fireworks보다 아래에 위치 */
+    z-index: 999; /* #fireworks보다 아래에 위치 */
     pointer-events: auto; /* canvas는 클릭 이벤트를 받도록 설정 */
 }
 
