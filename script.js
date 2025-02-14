@@ -79,104 +79,42 @@ function copyWomanAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
 
-// 폭죽 효과 코드
 document.addEventListener("DOMContentLoaded", function () {
-  const canvas = document.getElementById("fireworksCanvas");
+  const canvas = document.getElementById("backgroundCanvas");
   const ctx = canvas.getContext("2d");
-
+  
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-
-  // 이미지 로드 (상대 경로로 설정)
-  const particleImages = [
-      new Image(),
-      new Image(),
-      new Image()
-  ];
-
-  // 이미지 경로 업데이트
-  particleImages[0].src = "images/confetti_image_1.png"; // 첫 번째 이미지 경로
-  particleImages[1].src = "images/confetti_image_2.png"; // 두 번째 이미지 경로
-  particleImages[2].src = "images/confetti_image_3.png"; // 세 번째 이미지 경로
-
-  class Firework {
-      constructor() {
-          // 폭죽이 양쪽 끝에서 랜덤하게 시작
-          const randomSide = Math.random() > 0.5 ? 'left' : 'right';
-          this.x = randomSide === 'left' ? Math.random() * (canvas.width / 2) : Math.random() * (canvas.width / 2) + canvas.width / 2;
-          this.y = 0; // 화면 상단에서 시작
-          this.particles = [];
-          this.isExploded = false;
-
-          // 파티클들 생성
-          for (let i = 0; i < 150; i++) {  // 파티클 개수
-              this.particles.push({
-                  x: this.x,
-                  y: this.y,
-                  angle: Math.random() * Math.PI * 2,
-                  speed: Math.random() * 6 + 4,  // 속도를 더 빠르게 설정
-                  life: 100,
-                  imageIndex: Math.floor(Math.random() * 3),  // 0, 1, 2 중 하나를 랜덤으로 선택
-                  gravity: 0.1 + Math.random() * 0.2,  // 중력 추가
-                  velocityY: 0  // Y축 속도
-              });
-          }
-      }
-
-      update() {
-          if (!this.isExploded) {
-              // 폭죽이 폭발할 때까지 떨어지도록 Y축 속도 증가
-              this.particles.forEach(p => {
-                  p.y += p.speed;  // 아래로 떨어짐
-                  if (p.y > canvas.height / 3) {  // 일정 높이까지 떨어지면 폭발
-                      this.isExploded = true;  // 폭발 상태로 변경
-                  }
-              });
-          }
-
-          if (this.isExploded) {
-              // 폭죽이 터지면 파티클들이 떨어지게 하며 중력 효과 추가
-              this.particles.forEach(p => {
-                  p.x += Math.cos(p.angle) * p.speed;
-                  p.y += Math.sin(p.angle) * p.speed;
-                  p.velocityY += p.gravity;  // 중력 추가
-                  p.y += p.velocityY;  // Y축 속도 적용
-                  p.life--;
-              });
-          }
-
-          this.particles = this.particles.filter(p => p.life > 0);  // 생명이 끝난 파티클 삭제
-      }
-
-      draw() {
-          this.particles.forEach(p => {
-              // 이미지가 로드된 후에 그리기
-              if (particleImages[0].complete && particleImages[1].complete && particleImages[2].complete) {
-                  // 랜덤으로 선택된 이미지 그리기
-                  ctx.drawImage(particleImages[p.imageIndex], p.x, p.y, 40, 40); // 파티클 크기 조정
-              }
-          });
-      }
-  }
-
-  const fireworks = [];
-
-  function createFirework() {
-      fireworks.push(new Firework());
-  }
-
-  function animate() {
+  
+  const img = new Image();
+  img.src = "images/confetti_image_3.png"; // 이미지 경로 설정
+  
+  let scrollY = 0; // 초기 Y 위치
+  const speed = 0.2; // 이동 속도 조절 (0.1~0.5 사이 추천)
+  
+  function drawBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      fireworks.forEach(firework => {
-          firework.update();
-          firework.draw();
-      });
-      requestAnimationFrame(animate);
+      
+      const patternWidth = img.width * 1.5; // 패턴 크기 조정 (1.5배 확대)
+      const patternHeight = img.height * 1.5;
+      
+      for (let x = 0; x < canvas.width; x += patternWidth) {
+          for (let y = scrollY % patternHeight - patternHeight; y < canvas.height; y += patternHeight) {
+              ctx.drawImage(img, x, y, patternWidth, patternHeight);
+          }
+      }
+      
+      scrollY += speed; // 패턴을 위로 이동
+      requestAnimationFrame(drawBackground);
   }
-
-  animate();
-
-  // 페이지 로드시 폭죽 터짐 (양쪽 끝에서)
-  createFirework();
+  
+  img.onload = function () {
+      drawBackground();
+  };
+  
+  function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resizeCanvas);
 });
-
