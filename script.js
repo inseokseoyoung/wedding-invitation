@@ -118,10 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       draw() {
-          ctx.fillStyle = "rgba(255, 165, 0, 1)";
+          ctx.fillStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 1)`;
           this.particles.forEach(p => {
               ctx.beginPath();
-              ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+              ctx.rect(p.x, p.y, 4, 4);
               ctx.fill();
           });
       }
@@ -149,8 +149,9 @@ document.addEventListener("DOMContentLoaded", function () {
   animate();
 
   canvas.addEventListener("click", function (event) {
-      createFirework(event.clientX, event.clientY);
-  });
+    // 폭죽이 생성될 때, canvas 클릭 이벤트가 다른 요소의 클릭 이벤트를 방해하지 않도록 stopPropagation 제거
+    createFirework(event.clientX, event.clientY);
+});
 
   function resizeCanvas() {
       canvas.width = window.innerWidth;
