@@ -158,4 +158,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
 });
