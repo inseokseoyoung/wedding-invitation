@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function drawBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      const patternWidth = img.width * 1.5; // 패턴 크기 조정 (1.5배 확대)
-      const patternHeight = img.height * 1.5;
+      const patternWidth = img.width * 0.5; // 패턴 크기 조정 (0.5배 축소)
+      const patternHeight = img.height * 0.5;
       
       for (let x = 0; x < canvas.width; x += patternWidth) {
           for (let y = scrollY % patternHeight - patternHeight; y < canvas.height; y += patternHeight) {
