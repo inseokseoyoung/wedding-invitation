@@ -79,3 +79,12 @@ function copyWomanAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  lottie.loadAnimation({
+      container: document.getElementById("lottie-container"), // 애니메이션을 표시할 요소
+      renderer: "svg", // 렌더링 방식 (svg, canvas, html)
+      loop: true, // 반복 여부
+      autoplay: true, // 자동 재생 여부
+      path: "https://assets10.lottiefiles.com/packages/lf20_49rdyysj.json" // 샘플 애니메이션 JSON URL
+  });
+});
