@@ -217,7 +217,7 @@ a {
 }
 
 
-/* 
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -233,7 +233,6 @@ a {
     object-fit: contain;
     display: block;
   }  
-*/
 
   .mapimage-container {
     display: flex;
