@@ -21,7 +21,6 @@ header {
     min-height: 644px;
     background-size: cover;
     width: 100vw;
-    height: 100vh; /* 화면 전체 높이 */
 }
 
 .title-section {
