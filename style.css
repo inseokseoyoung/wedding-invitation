@@ -17,13 +17,28 @@ body {
 header {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     text-align: center;
     flex-direction: column; /* 헤더 내용 세로 정렬 */
     background: url('./images/header-background.png') no-repeat center;
     min-height: 644px;
     background-size: contain;
+}
+
+.title-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.date-section {
+    text-align: center;
+}
+
+.location-section {
+    text-align: center;
 }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
