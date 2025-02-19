@@ -75,6 +75,14 @@ function copyManAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
 
+function copyManPapaAccount() {
+  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+}
+
+function copyManMamaAccount() {
+  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+}
+
 function copyWomanAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
