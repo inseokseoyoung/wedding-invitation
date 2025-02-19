@@ -19,7 +19,7 @@ header {
     text-align: center;
     background: url('./images/header-background.png') no-repeat center;
     min-height: 644px;
-    background-size: contain;
+    background-size: cover;
 }
 
 .title-section {
