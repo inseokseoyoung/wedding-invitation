@@ -204,15 +204,14 @@ a {
 .grid-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3열 그리드 */
-    gap: 8px; /* 이미지 사이 여백 */
-    padding: 16px;
+    gap: 3px; /* 이미지 사이 여백 */
+    padding: 8px;
     justify-content: center;
 }
 
 .grid-gallery img {
     width: 100%; /* 그리드 셀 너비에 맞춤 */
     height: auto; /* 이미지 비율 유지 */
-    border-radius: 8px; /* 모서리 둥글게 */
     object-fit: cover;
 }
 
