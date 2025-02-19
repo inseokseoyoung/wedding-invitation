@@ -36,7 +36,7 @@ header {
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px; /* 원하는 고정된 너비 */
+    width: 390px; /* 원하는 고정된 너비 */
     text-align: center;
     white-space: nowrap; /* 줄바꿈 방지 */
     font-size: 16px; /* 텍스트 크기 고정 */
