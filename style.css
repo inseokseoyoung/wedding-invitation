@@ -24,7 +24,7 @@ header {
 
 .title-section {
     position: absolute;
-    top: 50px; /* 페이지 최상단에서 50px 떨어짐 */
+    top: 120px; /* 페이지 최상단에서 50px 떨어짐 */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -36,23 +36,15 @@ header {
     transform: translateX(-50%);
 }
 
-.location-section {
-    position: absolute;
-    bottom: 30px; /* date 아래로 50px 간격 */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
 header h1, header h2, p {
     margin: 0px 0;
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 32px;
     color: #FAFFDE;
-    font-weight: 420;
+    font-weight: 280;
 }
 
 header h1 span:first-child {
@@ -65,9 +57,9 @@ header h1 span {
 }
 
 header h2 {
-    font-size: 24px;
-    color: #6A654B;
-    font-weight: 300;
+    font-size: 20px;
+    color: #FAFFDE;
+    font-weight: 200;
 }
 
 header p {
