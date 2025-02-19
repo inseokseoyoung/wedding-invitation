@@ -24,16 +24,19 @@ header {
 
 .title-section {
     position: absolute;
-    top: 120px; /* 페이지 최상단에서 50px 떨어짐 */
+    top: 105px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .date-section {
     position: absolute;
-    bottom: 80px; /* header의 하단에서 80px 위 */
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
+    width: 600px; /* 원하는 고정된 너비 */
+    text-align: center;
+    white-space: nowrap; /* 줄바꿈 방지 */
 }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
