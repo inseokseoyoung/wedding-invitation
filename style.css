@@ -201,20 +201,6 @@ a {
     text-align: center; /* 텍스트 가운데 정렬 */
 }
 
-.grid-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3열 그리드 */
-    gap: 3px; /* 이미지 사이 여백 */
-    justify-content: center;
-}
-
-.grid-gallery img {
-    width: 100%; /* 그리드 셀 너비에 맞춤 */
-    height: auto; /* 이미지 비율 유지 */
-    object-fit: cover;
-}
-
-
 
 .image-container {
     display: flex;
@@ -265,7 +251,6 @@ a {
     margin-top: 24px;
   }
   
-/*
   .swiper-container {
     width: 100%;
     max-width: 800px;
@@ -280,7 +265,7 @@ a {
     object-fit: cover;
     display: block;
   }  
-*/
+
 
 /*
 footer {
