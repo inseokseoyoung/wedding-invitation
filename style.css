@@ -201,6 +201,9 @@ a {
     text-align: center; /* 텍스트 가운데 정렬 */
 }
 
+.phone-link-info:last-of-type {
+    margin-bottom: 16px; /* 원하는 여백 크기 */
+}
 
 .image-container {
     display: flex;
