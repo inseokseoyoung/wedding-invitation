@@ -16,30 +16,33 @@ body {
 /* Header 스타일 */
 header {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
     text-align: center;
-    flex-direction: column; /* 헤더 내용 세로 정렬 */
     background: url('./images/header-background.png') no-repeat center;
     min-height: 644px;
     background-size: contain;
 }
 
 .title-section {
-    text-align: center;
-    margin-top: 50px;
+    position: absolute;
+    top: 50px; /* 페이지 최상단에서 50px 떨어짐 */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .date-section {
-    text-align: center;
+    position: absolute;
+    bottom: 80px; /* header의 하단에서 80px 위 */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .location-section {
-    text-align: center;
+    position: absolute;
+    bottom: 30px; /* date 아래로 50px 간격 */
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
 header h1, header h2, p {
