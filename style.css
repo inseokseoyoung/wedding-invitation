@@ -209,6 +209,18 @@ a {
     margin-bottom: 16px; /* 원하는 여백 크기 */
 }
 
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가운데 정렬 */
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto; /* 위아래 여백 추가 및 중앙 정렬 */
+    padding: 20px 0;
+    width: 100%;
+}
+
 .calendar-image {
     width: 80%; /* 컨테이너에 맞춰 적절한 크기 조정 */
     max-width: 350px; /* 너무 크지 않도록 최대 크기 설정 */
