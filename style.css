@@ -20,7 +20,6 @@ header {
     background: url('./images/header-background.png') no-repeat center top;
     min-height: 644px;
     background-size: cover;
-    width: 100vw;
 }
 
 .title-section {
@@ -238,11 +237,11 @@ a {
 
   .account-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
     background-color: #FAFFDE;
     margin-top: 24px;
-  }
+}
   
   .account-box {
     background-color: #ffffff;
