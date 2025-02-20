@@ -21,11 +21,10 @@ header {
     min-height: 644px;
     background-size: cover;
     width: 430px; /* 아이폰 16 Pro 너비 고정 */
-    height: 644px; /* 아이폰 16 Pro 높이 고정 */
+    min-height: 644px; /* 아이폰 16 Pro 높이 고정 */
     margin: 0 auto;
-    display: flex;
-    justify-content: center; /* 가로 방향으로 중앙 정렬 */
-    align-items: center; /* 세로 방향으로 중앙 정렬 */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .title-section {
