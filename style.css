@@ -316,6 +316,6 @@ html, body {
 
     header {
         width: 430px;
-        height: 932px; /* 아이폰 16 Pro 높이 고정 */
+        height: 644px; /* 아이폰 16 Pro 높이 고정 */
     }
 }
