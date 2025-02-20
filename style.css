@@ -306,12 +306,6 @@ html, body {
     overflow-x: hidden;
 }
 
-header {
-    width: 100%;
-    height: auto;
-    background: url(./images/header-background.png) no-repeat center top;
-    background-size: cover;
-}
 
 @media (min-width: 1024px) {
     html, body {
