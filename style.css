@@ -51,6 +51,7 @@ header h1, header h2, p {
 }
 
 header h1 {
+    font-family: 'Orbit', sans-serif;
     font-size: 32px;
     color: #FAFFDE;
     font-weight: 280;
@@ -66,6 +67,7 @@ header h1 span {
 }
 
 header h2 {
+    font-family: 'Orbit', sans-serif;
     font-size: 20px;
     color: #FAFFDE;
     font-weight: 200;
