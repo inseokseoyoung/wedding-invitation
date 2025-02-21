@@ -94,34 +94,42 @@ function copyWomanPapaAccount() {
 function copyWomanMamaAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
-// 카카오톡 공유 버튼 클릭 시
-document.getElementById("kakao-share-button").addEventListener("click", function() {
-  if (window.Kakao) {
-      window.Kakao.init('16C71C8705B56C225898'); // 카카오 SDK 초기화
-      window.Kakao.Share.createDefaultButton({
+
+document.addEventListener("DOMContentLoaded", () => {
+  const shareButton = document.getElementById("kakao-share");
+  if (shareButton) {
+    shareButton.addEventListener("click", function() {
+      if (window.Kakao) {
+        window.Kakao.init('16C71C8705B56C225898'); // 카카오 SDK 초기화
+        window.Kakao.Share.createDefaultButton({
           container: '#kakao-share-button',
           objectType: 'feed',
           content: {
-              title: 'Inseok & Seoyoung의 결혼식',
-              description: '2025년 5월 24일 결혼식에 초대합니다!',
-              imageUrl: 'https://inseokseoyoung.github.io/wedding-invitation/images/thumbnail.jpg',
-              link: {
-                  mobileWebUrl: 'https://inseokseoyoung.github.io/wedding-invitation/',
-                  webUrl: 'https://inseokseoyoung.github.io/wedding-invitation/'
-              }
+            title: 'Inseok & Seoyoung의 결혼식',
+            description: '2025년 5월 24일 결혼식에 초대합니다!',
+            imageUrl: 'https://inseokseoyoung.github.io/wedding-invitation/images/thumbnail.jpg',
+            link: {
+              mobileWebUrl: 'https://inseokseoyoung.github.io/wedding-invitation/',
+              webUrl: 'https://inseokseoyoung.github.io/wedding-invitation/'
+            }
           }
-      });
+        });
+      }
+    });
+  } else {
+    console.warn("🚨 'kakao-share' 요소를 찾을 수 없습니다.");
   }
 });
 
+
 // 링크 복사 버튼 클릭 시
-document.getElementById("copy-link-button").addEventListener("click", function() {
+document.getElementById("copy-link").addEventListener("click", function() {
   const url = window.location.href; // 현재 페이지 URL
   copyToClipboard(url, '링크가 복사되었습니다!');
 });
 
 // 시스템 공유 버튼 클릭 시
-document.getElementById("system-share-button").addEventListener("click", function() {
+document.getElementById("system-share").addEventListener("click", function() {
   if (navigator.share) {
       navigator.share({
           title: 'Inseok & Seoyoung의 결혼식',
