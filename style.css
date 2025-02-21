@@ -307,23 +307,6 @@ footer p {
     margin: 0;
 }
 
-/* 공유 버튼들을 가로로 나열 */
-.share-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-/* 각 버튼 스타일 */
-.share-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 48px;
-    margin: 16px;
-}
-
-
 /* 초기 상태: 요소가 보이지 않음 */
 .fade-in {
     opacity: 0;
