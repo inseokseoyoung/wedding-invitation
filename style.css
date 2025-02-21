@@ -74,8 +74,15 @@ header {
   @keyframes confetti-right-animation {
     0% { transform: translateX(100%) rotate(0); }
     100% { transform: translateX(-100%) rotate(360deg); }
-  }  
-
+  }
+  
+  .confetti.left.animate-left {
+    animation: confetti-left-animation 5s ease-out infinite;
+  }
+  
+  .confetti.right.animate-right {
+    animation: confetti-right-animation 5s ease-out infinite;
+  }
 
 /* h1, h2에 margin을 설정해 상단 간격을 조절 */
 header h1, header h2, p {
