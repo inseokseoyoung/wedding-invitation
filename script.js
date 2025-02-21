@@ -95,17 +95,3 @@ function copyWomanMamaAccount() {
   copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    let confettiLeft = document.createElement('div');
-    let confettiRight = document.createElement('div');
-    confettiLeft.classList.add('confetti', 'left');
-    confettiRight.classList.add('confetti', 'right');
-    document.body.appendChild(confettiLeft);
-    document.body.appendChild(confettiRight);
-    
-    // 애니메이션 시작
-    confettiLeft.classList.add('animate-left');
-    confettiRight.classList.add('animate-right');
-  }, 1000); // 1초 후에 애니메이션 시작
-});
