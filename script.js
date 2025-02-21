@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // 링크 복사 버튼 클릭 시
 document.getElementById("copy-link").addEventListener("click", function() {
   const url = window.location.href; // 현재 페이지 URL
-  copyToClipboard(url, '링크가 복사되었습니다!');
+  copyToClipboard(url, '링크가 복사되었습니다');
 });
 
 // 시스템 공유 버튼 클릭 시
