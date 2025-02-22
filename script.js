@@ -72,15 +72,15 @@ function copyAddress() {
 }
 
 function copyManAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("신한은행 110394633690", '계좌번호가 복사되었습니다.');
 }
 
 function copyManPapaAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("우리은행 1002739385000", '계좌번호가 복사되었습니다.');
 }
 
 function copyManMamaAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("국민은행 23300204074186", '계좌번호가 복사되었습니다.');
 }
 
 function copyWomanAccount() {
@@ -88,10 +88,10 @@ function copyWomanAccount() {
 }
 
 function copyWomanPapaAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("카카오뱅크 3333153435664", '계좌번호가 복사되었습니다.');
 }
 
 function copyWomanMamaAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("신한은행 110063311080", '계좌번호가 복사되었습니다.');
 }
 
