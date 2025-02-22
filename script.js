@@ -60,38 +60,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function copyToClipboard(text, message) {
-  navigator.clipboard.writeText(text).then(() => {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+
+  try {
+      document.execCommand("copy");
       alert(message);
-  }).catch(() => {
-      alert('복사에 실패했습니다. 다시 시도해주세요.');
-  });
+  } catch (err) {
+      alert("복사에 실패했습니다. 다시 시도해주세요.");
+  }
+
+  document.body.removeChild(textarea);
 }
 
 function copyAddress() {
-  copyToClipboard("서울 구로구 새말로 97 신도림테크노마트 7층", '주소가 복사되었습니다. 지도 앱을 통해 길찾기를 시작해주세요.');
+  copyToClipboard("서울 구로구 새말로 97 신도림테크노마트 7층", "주소가 복사되었습니다. 지도 앱을 통해 길찾기를 시작해주세요.");
 }
 
 function copyManAccount() {
-  copyToClipboard("신한은행 110394633690", '계좌번호가 복사되었습니다.');
+  copyToClipboard("신한은행 110394633690", "계좌번호가 복사되었습니다.");
 }
 
 function copyManPapaAccount() {
-  copyToClipboard("우리은행 1002739385000", '계좌번호가 복사되었습니다.');
+  copyToClipboard("우리은행 1002739385000", "계좌번호가 복사되었습니다.");
 }
 
 function copyManMamaAccount() {
-  copyToClipboard("국민은행 23300204074186", '계좌번호가 복사되었습니다.');
+  copyToClipboard("국민은행 23300204074186", "계좌번호가 복사되었습니다.");
 }
 
 function copyWomanAccount() {
-  copyToClipboard("신한은행 110205761080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("신한은행 110205761080", "계좌번호가 복사되었습니다.");
 }
 
 function copyWomanPapaAccount() {
-  copyToClipboard("카카오뱅크 3333153435664", '계좌번호가 복사되었습니다.');
+  copyToClipboard("카카오뱅크 3333153435664", "계좌번호가 복사되었습니다.");
 }
 
 function copyWomanMamaAccount() {
-  copyToClipboard("신한은행 110063311080", '계좌번호가 복사되었습니다.');
+  copyToClipboard("신한은행 110063311080", "계좌번호가 복사되었습니다.");
 }
-
