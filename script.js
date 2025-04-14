@@ -80,7 +80,7 @@ function toggleAccountInfo(button, id) {
   const isVisible = infoBox.style.display === 'block';
 
   infoBox.style.display = isVisible ? 'none' : 'block';
-  button.textContent = isVisible ? '펼치기' : '접기';
+  button.textContent = isVisible ? '▼' : '▲';
 }
 
 function copyAddress() {
