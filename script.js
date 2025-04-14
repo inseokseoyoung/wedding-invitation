@@ -75,6 +75,14 @@ function copyToClipboard(text, message) {
   document.body.removeChild(textarea);
 }
 
+function toggleAccountInfo(button, id) {
+  const infoBox = document.getElementById(id);
+  const isVisible = infoBox.style.display === 'block';
+
+  infoBox.style.display = isVisible ? 'none' : 'block';
+  button.textContent = isVisible ? '펼치기' : '접기';
+}
+
 function copyAddress() {
   copyToClipboard("서울 구로구 새말로 97 신도림테크노마트 7층", "주소가 복사되었습니다. 지도 앱을 통해 길찾기를 시작해주세요.");
 }

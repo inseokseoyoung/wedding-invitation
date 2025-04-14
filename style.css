@@ -279,6 +279,22 @@ a {
     margin-top: 24px;
   }
   
+  .account-info {
+    display: none; /* 처음에는 숨김 */
+    margin-top: 10px;
+  }
+  
+  .toggle-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
   .swiper-container {
     width: 100%;
     max-width: 800px;
